@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* Reset some default styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+    @keyframes slideFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-slideFadeIn {
+      animation: slideFadeIn 1s ease-out forwards;
+    }
+ 
+ 
+ 
+/* Counter animation */
+.counter {
+	font-variant-numeric: tabular-nums;
+}
+
+@keyframes scroll-right-to-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+@keyframes scroll-left-to-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(250px * 7)); }
+}
+
+.slider-container {
+  display: block;;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Add some space between the two sliders */
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slide-track {
+  display: flex;
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+/* Apply animations to each slider */
+.right-to-left .slide-track {
+  animation: scroll-right-to-left 40s linear infinite;
+}
+
+.left-to-right .slide-track {
+  animation: scroll-left-to-right 40s linear infinite;
+}
+
+/* Spacer between the sliders */
+.spacer {
+  width: 50px; /* Adjust the space as needed */
+}

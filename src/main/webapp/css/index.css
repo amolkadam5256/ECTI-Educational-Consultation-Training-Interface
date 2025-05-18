@@ -79,3 +79,65 @@ body {
 .spacer {
   width: 50px; /* Adjust the space as needed */
 }
+
+
+/*navbar hover  active*/
+  /* Custom underline effect with gap */
+  .hover-underline {
+    position: relative;
+  }
+
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #2563eb; /* Blue color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline {
+    padding-bottom: 4px; /* Gap between text and line */
+  }
+
+  
+
+  
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 4px; /* space between text and underline */
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #2563eb; /* Tailwind blue-600 */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    
+    
+

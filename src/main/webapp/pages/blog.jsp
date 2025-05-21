@@ -107,7 +107,7 @@
 				<div class="relative group cursor-pointer hover:text-blue-600">
 					<span
 						class="breadcrumb-item after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 after:mt-0.5 group-hover:after:w-full active:after:w-full">
-						Courses </span>
+						Blog</span>
 				</div>
 			</div>
 		</div>
@@ -117,32 +117,45 @@
 
 		<!-- main Sections is start in course page  -->
 		<section
-			class="flex flex-col md:flex-row gap-10 md:gap-20 max-w-7xl mx-auto px-5 py-5 md:py-5 md:px-6">
+			class="flex flex-col md:flex-row gap-10 md:gap-20 max-w-7xl mx-auto px-5 py-5 md:py-1 md:px-6 md:pb-16">
 			<div class="max-w-xl flex flex-col gap-6">
 
-				<h1 class="text-3xl md:text-5xl font-semibold leading-tight">
-					Best IT Coding Classes in Pune With Placement</h1>
+				<h1 class="text-3xl md:text-4xl font-semibold leading-tight">
+					Welcome to the Official Blog of Envision Computer Training
+					Institute</h1>
 				<p class="text-[1rem] md:text-base leading-relaxed text-[#00405f]">
-					Envision Computer Training Institute Pvt. Ltd. (ECTIPL) in Pune
-					offers leading IT coding classes in Pune with placement support,
-					covering in-demand courses like Full Stack Web Development, Java,
-					Python, Dot Net, PHP, Embedded Systems, and Autodesk Alias. Known
-					for our best online &amp; offline full stack development course, we
-					provide industry-aligned, hands-on training tailored for both
-					beginners and professionals. ECTI's Java and Python classes build
-					core programming skills, while Dot Net, PHP, and specialized
-					courses in Embedded Systems and Autodesk prepare students for
-					versatile careers in IT. Join ECTI for expert training and a strong
-					placement track record in Pune’s tech industry.</p>
+					Kickstart your tech journey with confidence at Envision Computer
+					Training Institute Pune, your trusted partner in IT education since
+					1999. Whether you're a fresh graduate or a career switcher, our
+					blog is your gateway to industry insights, career tips, success
+					stories, and the latest updates in Full Stack Development, CAD,
+					andF other in-demand domains.</p>
+				<p class="text-[1rem] md:text-base leading-relaxed text-[#00405f]">
+					At ECTIPL, we don’t just teach — we prepare you for real-world
+					success. With Lifetime Job Assistance, hands-on project training,
+					and expert mentorship, we ensure you gain the practical skills and
+					confidence to excel in today’s competitive job market.</p>
+
+
+				<div class="flex flex-wrap gap-4" data-aos="fade-up">
+					<button
+						class="bg-[#004a6e] text-white rounded-lg px-6 py-3 font-semibold text-sm flex items-center space-x-2 hover:bg-[#003a56] transition">
+						<i class="fas fa-paper-plane"></i><span>Get Free
+							Consultation</span>
+					</button>
+					<button
+						class="bg-[#004a6e] text-white rounded-lg px-6 py-3 font-semibold text-sm flex items-center space-x-2 hover:bg-[#003a56] transition">
+						<i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+					</button>
+				</div>
 			</div>
 			<div class="relative flex-1 max-w-full md:max-w-lg rounded-xl">
-				<img
-					src="${pageContext.request.contextPath}/images/banner-img-1.png"
+				<img src="${pageContext.request.contextPath}/images/about-us.png"
 					alt="Two people, a woman in a mustard yellow sweater and a man in a patterned sweater, looking at a laptop screen together in an office setting"
 					class="w-full h-auto object-cover rounded-xl" width="600"
 					height="400" />
 				<div
-					class="absolute top-4 -left-5 bg-white rounded-xl p-4 w-40 shadow-md flex flex-col">
+					class="absolute bottom-0 -right-5 bg-white rounded-xl p-4 w-40 shadow-md flex flex-col">
 					<div
 						class="flex items-center justify-center gap-1 bg-[#cce7f7] rounded-full px-2 py-0.5 mb-2">
 						<i class="fas fa-star text-yellow-400 text-xs"></i> <i
@@ -155,7 +168,7 @@
 					<p class="text-xs text-[#00405f] mt-1">Average rating on google</p>
 				</div>
 				<div
-					class="absolute -top-6 right-6 bg-white rounded-xl p-4 w-32 shadow-md text-center">
+					class="absolute -top-6 -left-10 bg-white rounded-xl p-4 w-32 shadow-md text-center">
 					<p class="text-3xl font-bold leading-none">10k+</p>
 					<p class="text-xs mt-1">Happy Students</p>
 				</div>
@@ -163,916 +176,242 @@
 		</section>
 
 
-		<section class="bg-gray-100 py-10 px-4 sm:px-10">
-			<div class="max-w-7xl mx-auto">
-				<h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Top
-					Courses at ECTI, Pune</h2>
 
-				<div class="grid gap-8 lg:grid-cols-1">
 
-					<!-- Card Container with before/after hover effects -->
 
+		<section class="py-24 bg-white">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<h2
+					class="font-manrope text-4xl font-bold text-center text-gray-900 mb-16"
+					data-aos="fade-up" data-aos-duration="1000">
+					Welcome to the Official Blog of <br> Envision Computer
+					Training Institute
+				</h2>
+
+				<div class="flex flex-wrap justify-center gap-8">
+
+					<!-- Card Template -->
 					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-          before:absolute before:inset-0 before:bg-gradient-to-r before:from-indigo-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-          after:absolute after:inset-0 after:border-2 after:border-indigo-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-
-						<!-- Course Image -->
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Java Full Stack Course Image" />
-
-						<!-- Course Content -->
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-blue-700 dark:text-white relative inline-block">
-								Java Full Stack Developer Course in Pune <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								<span class="font-semibold text-indigo-600">Get
-									industry-ready</span> with hands-on training in Java full stack
-								technologies. This comprehensive course covers everything from
-								foundational programming concepts to advanced web application
-								development using Java, Spring Boot, and modern front-end
-								frameworks like React.js and Tailwind CSS. Learn to build
-								scalable, secure, and responsive web apps with real-world
-								projects and live code reviews. <br /> <br /> Develop
-								expertise in database management with MySQL and MongoDB, version
-								control using Git & GitHub, and deployment strategies using
-								Docker, CI/CD pipelines, and cloud platforms like AWS. Gain
-								practical experience with RESTful APIs, microservices
-								architecture, and agile development workflows. <br /> <br />
-								By the end of the course, you will be confident in creating
-								end-to-end solutions and prepared to ace interviews with
-								dedicated resume-building sessions and mock interviews designed
-								by industry experts.
-							</p>
-
-							<!-- Badges Section -->
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">HTML</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">CSS</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">JavaScript</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">React.js</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Spring
-									Boot</span> <span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">MySQL</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">MongoDB</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Docker</span>
-							</div>
-
-							<!-- Key Points -->
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-indigo-600 font-medium">Frontend:</span>
-									HTML5, CSS3, JavaScript, React.js, Tailwind CSS</li>
-								<li><span class="text-indigo-600 font-medium">Backend:</span>
-									Java, Spring Boot, REST APIs</li>
-								<li><span class="text-indigo-600 font-medium">Database:</span>
-									MySQL, MongoDB</li>
-								<li><span class="text-indigo-600 font-medium">Tools:</span>
-									Git, Maven, Gradle, VS Code, Postman</li>
-								<li><span class="text-indigo-600 font-medium">Deployment:</span>
-									Docker, CI/CD, AWS, Netlify</li>
-								<li><span class="text-indigo-600 font-medium">Extras:</span>
-									Mini Projects, Resume Building, Mock Interviews</li>
-							</ul>
-
-							<!-- Call to Action -->
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-indigo-600 rounded-lg px-6 flex items-center justify-center bg-indigo-600 hover:bg-white transition-all duration-300 text-white hover:text-indigo-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-          </svg>
-
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						class="group relative w-full max-w-md md:w-[48%] lg:w-[30%] border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+						data-aos="zoom-in" data-aos-delay="100">
+						<div class="relative">
+							<img src="https://pagedone.io/asset/uploads/1696244317.png"
+								alt="Java Full Stack"
+								class="w-full h-52 object-cover rounded-t-2xl">
+							<!-- Decorative hover effect -->
+							<div
+								class="absolute inset-0 bg-indigo-100 opacity-0 group-hover:opacity-10 transition duration-300"></div>
 						</div>
+						<div class="p-6 relative z-10">
+							<span class="text-indigo-600 font-semibold block mb-3">May
+								01, 2025</span>
+							<h4
+								class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition duration-300">Mastering
+								Java Full Stack at Envision</h4>
+							<p class="text-gray-600 mb-6">Explore how our Java Full Stack
+								course equips learners with real-world skills and hands-on
+								experience.</p>
+							<a href="#"
+								class="inline-block text-indigo-600 font-semibold hover:underline">Read
+								more..</a>
+						</div>
+						<!-- Hover ring using ::before -->
+						<div
+							class="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:border-2 before:border-indigo-500 before:rounded-2xl before:scale-110 before:opacity-0 group-hover:before:opacity-50 before:transition-all before:duration-300"></div>
 					</div>
 
-					<!-- Data Science with Python Course Card -->
+					<!-- Card 2 -->
 					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-        before:absolute before:inset-0 before:bg-gradient-to-r before:from-green-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-        after:absolute after:inset-0 after:border-2 after:border-green-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
-						<!-- Course Image -->
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Data Science with Python Course Image" />
-
-						<!-- Course Content -->
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-green-700 dark:text-white relative inline-block">
-								Data Science with Python Course <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-teal-400 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								<span class="font-semibold text-green-600">Master data
-									analysis</span> and visualization using Python libraries like Pandas,
-								NumPy, Matplotlib, and Seaborn. Explore machine learning models
-								with Scikit-learn and deep learning with TensorFlow and Keras.
-								Get hands-on experience with real datasets, data cleaning, and
-								model deployment. <br /> <br /> Learn SQL, data wrangling, and
-								how to build predictive models to solve business problems. Gain
-								proficiency in Jupyter notebooks, Git version control, and cloud
-								computing with AWS for scalable data processing. <br /> <br />
-								End with capstone projects, interview prep, and resume reviews
-								focused on data science roles.
-							</p>
-
-							<!-- Badges Section -->
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">Python</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">Pandas</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">NumPy</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">Machine
-									Learning</span> <span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">TensorFlow</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">SQL</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">AWS</span>
-								<span
-									class="px-2 py-1 bg-green-100 text-green-700 font-semibold rounded-full">Git</span>
-							</div>
-
-							<!-- Key Points -->
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-green-600 font-medium">Programming:</span>
-									Python, Jupyter Notebooks</li>
-								<li><span class="text-green-600 font-medium">Data
-										Tools:</span> Pandas, NumPy, Matplotlib, Seaborn</li>
-								<li><span class="text-green-600 font-medium">ML &
-										DL:</span> Scikit-learn, TensorFlow, Keras</li>
-								<li><span class="text-green-600 font-medium">Database:</span>
-									SQL, NoSQL</li>
-								<li><span class="text-green-600 font-medium">Cloud &
-										Tools:</span> AWS, Git, Docker</li>
-								<li><span class="text-green-600 font-medium">Extras:</span>
-									Projects, Interview Prep, Resume Building</li>
-							</ul>
-
-							<!-- Call to Action -->
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-green-600 rounded-lg px-6 flex items-center justify-center bg-green-600 hover:bg-white transition-all duration-300 text-white hover:text-green-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						class="group relative w-full max-w-md md:w-[48%] lg:w-[30%] border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+						data-aos="zoom-in" data-aos-delay="200">
+						<div class="relative">
+							<img src="https://pagedone.io/asset/uploads/1696244340.png"
+								alt="Python Career"
+								class="w-full h-52 object-cover rounded-t-2xl">
+							<div
+								class="absolute inset-0 bg-indigo-100 opacity-0 group-hover:opacity-10 transition duration-300"></div>
 						</div>
+						<div class="p-6 relative z-10">
+							<span class="text-indigo-600 font-semibold block mb-3">May
+								10, 2025</span>
+							<h4
+								class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition duration-300">Top
+								5 Career Paths with Python</h4>
+							<p class="text-gray-600 mb-6">Learn how mastering Python
+								opens doors in Data Science, AI, Web Development, and more.</p>
+							<a href="#"
+								class="inline-block text-indigo-600 font-semibold hover:underline">Read
+								more..</a>
+						</div>
+						<div
+							class="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:border-2 before:border-indigo-500 before:rounded-2xl before:scale-110 before:opacity-0 group-hover:before:opacity-50 before:transition-all before:duration-300"></div>
 					</div>
 
-					<!-- DevOps Engineer Course Card -->
+					<!-- Card 3 -->
 					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-        before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-        after:absolute after:inset-0 after:border-2 after:border-orange-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-						<!-- Course Image -->
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="DevOps Engineer Course Image" />
-
-						<!-- Course Content -->
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-orange-700 dark:text-white relative inline-block">
-								DevOps Engineer Course <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								<span class="font-semibold text-orange-600">Learn to
-									streamline</span> software delivery with continuous integration and
-								continuous deployment (CI/CD) pipelines. Master automation tools
-								like Jenkins, Ansible, and Terraform alongside containerization
-								with Docker and Kubernetes. <br /> <br /> Understand cloud
-								infrastructure with AWS and Azure, infrastructure as code (IaC),
-								monitoring, and logging. Gain practical experience in scripting,
-								configuration management, and DevOps culture to collaborate
-								effectively with development and operations teams. <br /> <br />
-								Complete the course with real-world projects, career guidance,
-								and interview practice tailored for DevOps roles.
-							</p>
-
-							<!-- Badges Section -->
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Docker</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Kubernetes</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Jenkins</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Terraform</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Ansible</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">AWS</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Azure</span>
-								<span
-									class="px-2 py-1 bg-orange-100 text-orange-700 font-semibold rounded-full">Git</span>
-							</div>
-
-							<!-- Key Points -->
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-orange-600 font-medium">Containerization:</span>
-									Docker, Kubernetes</li>
-								<li><span class="text-orange-600 font-medium">CI/CD:</span>
-									Jenkins, GitHub Actions</li>
-								<li><span class="text-orange-600 font-medium">Automation:</span>
-									Ansible, Terraform</li>
-								<li><span class="text-orange-600 font-medium">Cloud
-										Platforms:</span> AWS, Azure</li>
-								<li><span class="text-orange-600 font-medium">Monitoring:</span>
-									Prometheus, Grafana</li>
-								<li><span class="text-orange-600 font-medium">Extras:</span>
-									Projects, Interview Prep, Resume Building</li>
-							</ul>
-
-							<!-- Call to Action -->
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-orange-600 rounded-lg px-6 flex items-center justify-center bg-orange-600 hover:bg-white transition-all duration-300 text-white hover:text-orange-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-orange-500 via-yellow-500 to-red-400 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						class="group relative w-full max-w-md md:w-[48%] lg:w-[30%] border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+						data-aos="zoom-in" data-aos-delay="300">
+						<div class="relative">
+							<img src="https://pagedone.io/asset/uploads/1696244356.png"
+								alt="Web Dev Training"
+								class="w-full h-52 object-cover rounded-t-2xl">
+							<div
+								class="absolute inset-0 bg-indigo-100 opacity-0 group-hover:opacity-10 transition duration-300"></div>
 						</div>
-					</div>
-					<!-- Python Full Stack Course (Indigo) -->
-					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-indigo-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-indigo-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Python Full Stack Course Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-blue-700 dark:text-white relative inline-block">
-								Python Full Stack Developer Course <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								<span class="font-semibold text-indigo-600">Master Python</span>
-								and full-stack development including Django and Flask for
-								backend, and React.js for frontend. Build real-world projects
-								with REST APIs, database integration, and deployment. Gain
-								hands-on experience with PostgreSQL, MongoDB, Git, Docker, and
-								cloud platforms. Prepare for your career with interview prep and
-								resume-building sessions.
-							</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Python</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Django</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Flask</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">React.js</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">PostgreSQL</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">MongoDB</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Docker</span>
-								<span
-									class="px-2 py-1 bg-indigo-100 text-indigo-700 font-semibold rounded-full">Git</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-indigo-600 font-medium">Frontend:</span>
-									HTML5, CSS3, JavaScript, React.js</li>
-								<li><span class="text-indigo-600 font-medium">Backend:</span>
-									Python, Django, Flask, REST APIs</li>
-								<li><span class="text-indigo-600 font-medium">Database:</span>
-									PostgreSQL, MongoDB</li>
-								<li><span class="text-indigo-600 font-medium">Tools:</span>
-									Git, Docker, VS Code, Postman</li>
-								<li><span class="text-indigo-600 font-medium">Deployment:</span>
-									Docker, AWS, Heroku</li>
-								<li><span class="text-indigo-600 font-medium">Extras:</span>
-									Projects, Resume Building, Mock Interviews</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-indigo-600 rounded-lg px-6 flex items-center justify-center bg-indigo-600 hover:bg-white transition-all duration-300 text-white hover:text-indigo-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						<div class="p-6 relative z-10">
+							<span class="text-indigo-600 font-semibold block mb-3">May
+								15, 2025</span>
+							<h4
+								class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition duration-300">From
+								Beginner to Pro in Web Development</h4>
+							<p class="text-gray-600 mb-6">A journey through Envision’s
+								Web Dev curriculum with project-based learning and expert
+								mentorship.</p>
+							<a href="#"
+								class="inline-block text-indigo-600 font-semibold hover:underline">Read
+								more..</a>
 						</div>
+						<div
+							class="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:border-2 before:border-indigo-500 before:rounded-2xl before:scale-110 before:opacity-0 group-hover:before:opacity-50 before:transition-all before:duration-300"></div>
 					</div>
 
-
-					<!-- Autodesk Alias Training (Emerald) -->
+					<!-- Card 4 -->
 					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Autodesk Alias Training Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								Autodesk Alias Training <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Learn to design stunning automotive and industrial models with
-								Autodesk Alias software. Gain proficiency in 3D modeling,
-								surface design, and visualization techniques used by industry
-								professionals. Enhance your portfolio with hands-on projects and
-								expert-led training.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Autodesk
-									Alias</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">3D
-									Modeling</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Surface
-									Design</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Visualization</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Software:</span>
-									Autodesk Alias</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									3D Modeling, Surface &amp; Curve Design</li>
-								<li><span class="text-emerald-600 font-medium">Techniques:</span>
-									Visualization, Rendering</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									Automotive &amp; Industrial Design</li>
-								<li><span class="text-emerald-600 font-medium">Tools:</span>
-									Alias Interface, CAD Integration</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									3 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Industry Recognized Certificate</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						class="group relative w-full max-w-md md:w-[48%] lg:w-[30%] border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+						data-aos="zoom-in" data-aos-delay="400">
+						<div class="relative">
+							<img src="https://pagedone.io/asset/uploads/1696244340.png"
+								alt="Success Stories"
+								class="w-full h-52 object-cover rounded-t-2xl">
+							<div
+								class="absolute inset-0 bg-indigo-100 opacity-0 group-hover:opacity-10 transition duration-300"></div>
 						</div>
+						<div class="p-6 relative z-10">
+							<span class="text-indigo-600 font-semibold block mb-3">May
+								18, 2025</span>
+							<h4
+								class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition duration-300">Success
+								Stories: From Training to Placement</h4>
+							<p class="text-gray-600 mb-6">Be inspired by real student
+								journeys who started at Envision and landed top tech roles.</p>
+							<a href="#"
+								class="inline-block text-indigo-600 font-semibold hover:underline">Read
+								more..</a>
+						</div>
+						<div
+							class="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:border-2 before:border-indigo-500 before:rounded-2xl before:scale-110 before:opacity-0 group-hover:before:opacity-50 before:transition-all before:duration-300"></div>
 					</div>
 
-					<!-- PHP Course -->
+					<!-- Card 5 -->
 					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="PHP Course Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								PHP Course <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Master server-side scripting with PHP. Learn database
-								integration, dynamic web development, and best coding practices.
-								Build real-world applications with hands-on projects and expert
-								guidance.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">PHP</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Server-Side</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">MySQL</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Web
-									Development</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Language:</span>
-									PHP 8.x</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									Backend Development, CRUD Operations</li>
-								<li><span class="text-emerald-600 font-medium">Database:</span>
-									MySQL, PDO</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									Dynamic Websites, CMS</li>
-								<li><span class="text-emerald-600 font-medium">Tools:</span>
-									XAMPP, Composer</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									2 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Professional PHP Developer</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
+						class="group relative w-full max-w-md md:w-[48%] lg:w-[30%] border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+						data-aos="zoom-in" data-aos-delay="500">
+						<div class="relative">
+							<img src="https://pagedone.io/asset/uploads/1696244317.png"
+								alt="Why Envision"
+								class="w-full h-52 object-cover rounded-t-2xl">
+							<div
+								class="absolute inset-0 bg-indigo-100 opacity-0 group-hover:opacity-10 transition duration-300"></div>
 						</div>
+						<div class="p-6 relative z-10">
+							<span class="text-indigo-600 font-semibold block mb-3">May
+								20, 2025</span>
+							<h4
+								class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition duration-300">Why
+								Choose Envision for IT Training</h4>
+							<p class="text-gray-600 mb-6">Discover what sets Envision
+								apart—expert mentors, real-world projects, and placement
+								support.</p>
+							<a href="#"
+								class="inline-block text-indigo-600 font-semibold hover:underline">Read
+								more..</a>
+						</div>
+						<div
+							class="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:border-2 before:border-indigo-500 before:rounded-2xl before:scale-110 before:opacity-0 group-hover:before:opacity-50 before:transition-all before:duration-300"></div>
 					</div>
 
-					<!-- Dot NET Full Stack -->
-					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt=".NET Full Stack Course Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								Dot NET Full Stack <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Learn complete full-stack development with .NET technologies.
-								Build scalable web applications using C#, ASP.NET Core, and
-								Entity Framework. Develop both frontend and backend with
-								real-world projects.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">C#</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">ASP.NET
-									Core</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Entity
-									Framework</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Full
-									Stack</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Language:</span>
-									C#</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									Backend & Frontend Development</li>
-								<li><span class="text-emerald-600 font-medium">Framework:</span>
-									ASP.NET Core</li>
-								<li><span class="text-emerald-600 font-medium">Database:</span>
-									SQL Server, Entity Framework</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									Web Apps, APIs</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									4 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Full Stack .NET Developer</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- Automotive Embedded -->
-					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Automotive Embedded Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								Automotive Embedded <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Dive into embedded systems for automotive applications. Learn
-								microcontroller programming, sensor interfacing, and real-time
-								operating systems. Work on projects simulating automotive
-								embedded control units.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Embedded
-									Systems</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Microcontrollers</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">RTOS</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Automotive</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Topics:</span>
-									Microcontroller Programming, CAN Protocol</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									Embedded C, RTOS Basics</li>
-								<li><span class="text-emerald-600 font-medium">Tools:</span>
-									ARM Cortex, Keil, MPLAB</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									ECU Simulations, Sensor Integration</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									3 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Automotive Embedded Specialist</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- Advance JAVA -->
-					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Advance Java Course Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								Advance JAVA <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Enhance your Java skills with advanced concepts like
-								multithreading, JDBC, Servlets, JSP, and design patterns. Build
-								enterprise-level applications with hands-on coding challenges
-								and projects.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Java</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Multithreading</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Servlets</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">JSP</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Topics:</span>
-									Multithreading, JDBC, Servlets</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									Enterprise Java Applications</li>
-								<li><span class="text-emerald-600 font-medium">Frameworks:</span>
-									JSP, Hibernate (Intro)</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									Web Apps, APIs</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									3 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Advanced Java Developer</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- Ethical Hacking -->
-					<div
-						class="relative group flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-lg transition-all duration-500 md:flex-row dark:border-gray-700 dark:bg-gray-800 hover:shadow-2xl hover:bg-gray-50 dark:hover:bg-gray-700 overflow-hidden
-  before:absolute before:inset-0 before:bg-gradient-to-r before:from-emerald-100 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
-  after:absolute after:inset-0 after:border-2 after:border-emerald-500 after:rounded-xl after:opacity-0 group-hover:after:opacity-100 group-hover:after:scale-105 after:transition-all after:duration-500"
-						data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-
-						<img
-							class="object-cover w-full h-60 rounded-t-xl md:h-full md:w-1/3 md:rounded-none md:rounded-s-xl transition-transform duration-500 group-hover:scale-105"
-							src="${pageContext.request.contextPath}/images/ABM.webp"
-							alt="Ethical Hacking Course Image" />
-
-						<div
-							class="flex flex-col justify-between p-6 leading-relaxed z-10">
-							<h3
-								class="mb-3 text-2xl font-extrabold tracking-tight text-emerald-700 dark:text-white relative inline-block">
-								Ethical Hacking <span
-									class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded"></span>
-							</h3>
-
-							<p
-								class="mb-5 text-gray-700 dark:text-gray-300 text-sm lg:text-base group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
-								Become a certified ethical hacker. Understand penetration
-								testing, vulnerability assessment, network security, and cyber
-								defense strategies. Learn hacking techniques ethically with
-								hands-on labs.</p>
-
-							<div class="flex flex-wrap gap-2 mb-4 text-sm">
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Cybersecurity</span>
-								<span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Penetration
-									Testing</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Network
-									Security</span> <span
-									class="px-2 py-1 bg-emerald-100 text-emerald-700 font-semibold rounded-full">Ethical
-									Hacking</span>
-							</div>
-
-							<ul
-								class="list-disc pl-5 text-gray-600 dark:text-gray-300 text-sm space-y-1 group-hover:scale-[1.01] transition-transform duration-300">
-								<li><span class="text-emerald-600 font-medium">Topics:</span>
-									Pen Testing, Vulnerability Assessment</li>
-								<li><span class="text-emerald-600 font-medium">Tools:</span>
-									Kali Linux, Metasploit</li>
-								<li><span class="text-emerald-600 font-medium">Skills:</span>
-									Network Defense, Ethical Hacking</li>
-								<li><span class="text-emerald-600 font-medium">Projects:</span>
-									Security Audits, Labs</li>
-								<li><span class="text-emerald-600 font-medium">Duration:</span>
-									4 Months</li>
-								<li><span class="text-emerald-600 font-medium">Certification:</span>
-									Certified Ethical Hacker (CEH)</li>
-							</ul>
-
-							<div class="flex justify-center lg:justify-start mt-8">
-								<button
-									class="relative overflow-hidden w-auto h-12 border-2 border-emerald-600 rounded-lg px-6 flex items-center justify-center bg-emerald-600 hover:bg-white transition-all duration-300 text-white hover:text-emerald-600 font-semibold group">
-									<svg xmlns="http://www.w3.org/2000/svg"
-										class="h-5 w-5 mr-2 -ml-1" fill="none" viewBox="0 0 24 24"
-										stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-											d="M12 4v16m8-8H4" />
-        </svg>
-									<span class="z-10">Enroll Now</span> <span
-										class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
-								</button>
-							</div>
-						</div>
-					</div>
 				</div>
-			</div>
-		</section>
-
-
-		<!-- Why Choose Us -->
-		<section
-			class="bg-gradient-to-tr from-blue-50 via-cyan-100 to-white py-20 px-6 max-w-7xl mx-auto"
-			data-aos="fade-up">
-			<h2
-				class="text-5xl font-extrabold text-center text-[#004466] mb-16 tracking-wide drop-shadow-md relative inline-block"
-				data-aos="zoom-in">
-				Why Choose <span
-					class="text-gradient bg-gradient-to-r from-[#00bcd4] to-[#004466] bg-clip-text text-transparent relative">
-					ECTI? <span
-					class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#00bcd4] to-[#004466] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-				</span>
-			</h2>
-
-			<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
-				<!-- CARD 1 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="100">
-					<div class="text-4xl text-[#004466] mb-4">🎓</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Experienced
-						Faculty</h3>
-					<p class="text-gray-600">Learn from industry experts and
-						seasoned educators passionate about teaching and mentorship.</p>
-				</div>
-
-				<!-- CARD 2 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="200">
-					<div class="text-4xl text-[#004466] mb-4">💻</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Modern
-						Infrastructure</h3>
-					<p class="text-gray-600">State-of-the-art labs and smart
-						classrooms to support interactive and hands-on learning.</p>
-				</div>
-
-				<!-- CARD 3 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="300">
-					<div class="text-4xl text-[#004466] mb-4">📚</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Comprehensive
-						Curriculum</h3>
-					<p class="text-gray-600">Courses designed to match industry
-						needs with a perfect blend of theory and practical exposure.</p>
-				</div>
-
-				<!-- CARD 4 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="400">
-					<div class="text-4xl text-[#004466] mb-4">🤝</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Placement
-						Assistance</h3>
-					<p class="text-gray-600">Dedicated placement support and
-						industry connections to kickstart your career.</p>
-				</div>
-
-				<!-- CARD 5 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="500">
-					<div class="text-4xl text-[#004466] mb-4">🌐</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Global
-						Exposure</h3>
-					<p class="text-gray-600">Opportunities to collaborate with
-						international institutions and attend global tech events.</p>
-				</div>
-
-				<!-- CARD 6 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="600">
-					<div class="text-4xl text-[#004466] mb-4">📈</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Career
-						Growth</h3>
-					<p class="text-gray-600">We focus on your long-term success,
-						offering guidance even after course completion.</p>
-				</div>
-
-				<!-- CARD 7 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="700">
-					<div class="text-4xl text-[#004466] mb-4">🛠️</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Hands-on
-						Projects</h3>
-					<p class="text-gray-600">Apply your skills through real-world
-						projects that enhance learning and build portfolios.</p>
-				</div>
-
-				<!-- CARD 8 -->
-				<div
-					class="group relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#00bcd4]"
-					data-aos="fade-up" data-aos-delay="800">
-					<div class="text-4xl text-[#004466] mb-4">🏆</div>
-					<h3 class="text-xl font-bold text-[#004466] mb-2">Award-Winning
-						Institute</h3>
-					<p class="text-gray-600">Recognized for excellence in education
-						and student outcomes across multiple platforms.</p>
+				<div class="flex justify-center mt-10 md:mt-16">
+					<button
+						class="relative overflow-hidden w-auto h-12 border-2 border-blue-600 rounded-lg px-6 flex items-center justify-center bg-blue-600 hover:bg-white transition-all duration-300 text-white hover:text-blue-600 font-semibold group"
+						data-aos="fade-up" data-aos-duration="1000">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 -ml-1"
+							fill="none" viewBox="0 0 24 24" stroke="currentColor"
+							stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+								d="M19 21H5a2 2 0 01-2-2V7a2 2 0 012-2h4l2-2h2l2 2h4a2 2 0 012 2v12a2 2 0 01-2 2z" />
+    </svg>
+						<span class="z-10">Read Full Blog</span> <span
+							class="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
+					</button>
 				</div>
 
 			</div>
 		</section>
 
+
+
+		<section class="py-16 px-4 md:px-12" data-aos="fade-up"
+			data-aos-duration="1000">
+			<div class="max-w-6xl mx-auto">
+				<h2
+					class="text-4xl md:text-5xl font-bold  mb-6 text-center text-gradient bg-gradient-to-r from-[#00bcd4] to-[#004466] bg-clip-text text-transparent relative"
+					data-aos="zoom-in">Latest Updates from Envision’s Institute
+					Leading Tech Courses</h2>
+
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="100">Stay ahead in your tech
+					journey with the Envision Computer Training Institute Blog, your
+					trusted resource for news, updates, and insights from our most
+					in-demand IT courses. From Full Stack Java Development to Python
+					Programming, Web Development, Data Science, Machine Learning, and
+					Digital Marketing, we provide tips, tutorials, and real-world
+					success stories that support your growth. Whether you’re preparing
+					for a tech career or boosting your current skills, our blog is
+					designed to guide you through the ever-changing IT landscape.</p>
+
+				<h2
+					class="text-4xl md:text-5xl font-bold  mb-6 text-center text-gradient bg-gradient-to-r from-[#00bcd4] to-[#004466] bg-clip-text text-transparent relative"
+					data-aos="zoom-in">Learn. Grow. Succeed with Envision’s
+					Expertise</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="200">Visit our Bibvewadi
+					branch for courses in Full Stack Java Development, Python
+					Programming, Web Development, Software Testing, and Data Science.
+					Students in central Pune can also enroll at our Model Colony
+					Shivajinagar branch, where we offer the same industry-relevant IT
+					training programs.</p>
+
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="300">At Envision Computer
+					Training Institute, our mission is to empower students with
+					practical, job-ready skills. In this blog, you’ll find everything
+					from coding challenges and placement prep tips to deep dives into
+					industry tools and technologies. Follow us for regular updates on
+					new course batches, student achievements, and programming
+					resources.</p>
+
+
+				<div class="text-center mt-10" data-aos="zoom-in"
+					data-aos-delay="900">
+					<button
+						class="relative overflow-hidden w-auto h-12 border-2 border-green-600 rounded-lg px-6 flex items-center justify-center bg-green-600 hover:bg-white transition-all duration-300 text-white hover:text-green-600 font-semibold group">
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 -ml-1"
+							fill="none" viewBox="0 0 24 24" stroke="currentColor"
+							stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+								d="M12 4v16m8-8H4" />
+    </svg>
+
+						<span class="z-10">📍 Find Your Nearest Branch</span> <span
+							class="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition-all duration-500">
+						</span>
+					</button>
+				</div>
+
+			</div>
+		</section>
 
 
 		<!--   
@@ -1085,14 +424,20 @@
 			<!-- Heading with Animation and Hover -->
 			<div class="text-center mb-16 px-5 py-10" data-aos="fade-up"
 				data-aos-duration="1000">
+
+
 				<h2
 					class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 drop-shadow-md transition duration-300 hover:scale-105">
-					Our Students Placed In</h2>
+					<span class="placed-count " data-placed="3690">0+</span> Students
+					Placed <br> in Top Companies
+				</h2>
+
 				<p
 					class="text-lg sm:text-xl mt-4 text-gray-600 hover:text-indigo-700 transition duration-300 ease-in-out tracking-wide"
-					data-aos="fade-up" data-aos-delay="200">Top Companies Hiring
-					from Our Courses & Training Programs</p>
+					data-aos="fade-up" data-aos-delay="200">Through Our Courses and
+					Training Programs</p>
 			</div>
+
 			<!-- Left to Right Slider -->
 			<div class="swiper mySwiper max-w-6xl mx-auto px-4 mb-16  "
 				data-aos="fade-up" data-aos-duration="1000">
@@ -1349,6 +694,359 @@
 			</div>
 		</section>
 
+
+
+		<!--Testimonials -->
+
+		<section class="max-w-7xl mx-auto px-6 py-16 " data-aos="fade-up"
+			data-aos-duration="3000">
+			<div class="flex flex-col lg:flex-row items-center gap-12">
+				<!-- Left content -->
+				<div class="w-full lg:w-2/5 text-center lg:text-left"
+					data-aos="fade-up" data-aos-duration="1000">
+					<span
+						class="text-indigo-600 font-semibold text-sm tracking-wide mb-3 block">
+						Testimonial </span>
+					<h2
+						class="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
+						23k+ Customers gave their <span
+							class="bg-gradient-to-tr from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+							Feedback </span>
+					</h2>
+					<p
+						class="text-gray-600 text-base sm:text-lg max-w-md mx-auto lg:mx-0">
+						We highly value the opinions of our customers and are proud of the
+						glowing feedback we receive daily. Here's what some of them had to
+						say.</p>
+
+					<!-- Nav Buttons -->
+					<div class="flex justify-center lg:justify-start mt-10 gap-6">
+						<button id="slider-button-left" aria-label="Previous Slide"
+							class="w-12 h-12 border-2 border-indigo-600 rounded-lg flex items-center justify-center hover:bg-indigo-600  transition group">
+							<svg class="w-6 h-6 text-indigo-600 group-hover:text-white"
+								fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round"
+								viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+									d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18">
+                            </path>
+                        </svg>
+						</button>
+						<button id="slider-button-right" aria-label="Next Slide"
+							class="w-12 h-12 border-2 border-indigo-600 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition group">
+							<svg class="w-6 h-6 text-indigo-600 group-hover:text-white"
+								fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round"
+								viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+									d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6">
+                            </path>
+                        </svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- Right slider -->
+				<div class="w-full lg:w-3/5">
+					<div class="swiper swiperText">
+						<div class="swiper-wrapper" data-aos="fade-up"
+							data-aos-duration="3000">
+
+							<!-- slide 1 -->
+							<div tabindex="0"
+								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
+
+								<!-- Profile Image & Name -->
+								<div
+									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
+									<img
+										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
+										src="${pageContext.request.contextPath}/images/Aditya-Garud.jpg"
+										alt="Emily Johnson" />
+									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Aditya
+										Garud</h3>
+								</div>
+
+
+
+								<!-- Content -->
+								<div class="flex flex-col gap-2 text-left">
+									<!-- Job Title -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Software
+										Engineer at TechCorp</p>
+
+									<!-- Position -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Team
+										Lead, Frontend Development</p>
+
+									<!-- Date -->
+									<p class="text-xs sm:text-sm text-gray-500">June 12, 2024</p>
+
+									<!-- University -->
+									<p class="text-sm text-indigo-600 font-medium">University
+										of California, Berkeley</p>
+
+									<!-- Course -->
+									<p class="text-sm text-indigo-600 font-medium">B.Sc. in
+										Computer Science</p>
+
+									<!-- Star Rating -->
+									<!-- Star Rating -->
+									<div
+										class="flex justify-center sm:justify-start mt-2 gap-1 text-amber-500">
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Half Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient
+												id="halfStarGrad" x1="0" y1="0" x2="1" y2="0">
+                                                <stop offset="50%"
+												stop-color="currentColor" />
+                                                <stop offset="50%"
+												stop-color="transparent" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="url(#halfStarGrad)"></path>
+                                    </svg>
+									</div>
+
+
+
+								</div>
+							</div>
+
+							<!-- slider 2 -->
+
+							<div tabindex="0"
+								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
+
+								<!-- Profile Image & Name -->
+								<div
+									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
+									<img
+										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
+										src="https://randomuser.me/api/portraits/women/65.jpg"
+										alt="Emily Johnson" />
+									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Emily
+										Johnson</h3>
+								</div>
+
+
+
+								<!-- Content -->
+								<div class="flex flex-col gap-2 text-left">
+									<!-- Job Title -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Software
+										Engineer at TechCorp</p>
+
+									<!-- Position -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Team
+										Lead, Frontend Development</p>
+
+									<!-- Date -->
+									<p class="text-xs sm:text-sm text-gray-500">June 12, 2024</p>
+
+									<!-- University -->
+									<p class="text-sm text-indigo-600 font-medium">University
+										of California, Berkeley</p>
+
+									<!-- Course -->
+									<p class="text-sm text-indigo-600 font-medium">B.Sc. in
+										Computer Science</p>
+
+									<!-- Star Rating -->
+									<!-- Star Rating -->
+									<div
+										class="flex justify-center sm:justify-start mt-2 gap-1 text-amber-500">
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Half Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient
+												id="halfStarGrad" x1="0" y1="0" x2="1" y2="0">
+                                                <stop offset="50%"
+												stop-color="currentColor" />
+                                                <stop offset="50%"
+												stop-color="transparent" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="url(#halfStarGrad)"></path>
+                                    </svg>
+									</div>
+
+
+								</div>
+							</div>
+
+
+							<!-- slider 3 -->
+
+							<div tabindex="0"
+								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
+
+								<!-- Profile Image & Name -->
+								<div
+									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
+									<img
+										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
+										src="https://randomuser.me/api/portraits/women/65.jpg"
+										alt="Emily Johnson" />
+									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Radha
+										Kadam</h3>
+								</div>
+
+
+
+								<!-- Content -->
+								<div class="flex flex-col gap-2 text-left">
+									<!-- Job Title -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Software
+										Engineer at TechCorp</p>
+
+									<!-- Position -->
+									<p class="text-sm sm:text-base text-gray-600 font-medium">Team
+										Lead, Frontend Development</p>
+
+									<!-- Date -->
+									<p class="text-xs sm:text-sm text-gray-500">June 12, 2024</p>
+
+									<!-- University -->
+									<p class="text-sm text-indigo-600 font-medium">University
+										of California, Berkeley</p>
+
+									<!-- Course -->
+									<p class="text-sm text-indigo-600 font-medium">B.Sc. in
+										Computer Science</p>
+
+									<!-- Star Rating -->
+									<!-- Star Rating -->
+									<div
+										class="flex justify-center sm:justify-start mt-2 gap-1 text-amber-500">
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+
+										<!-- Full Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="currentColor"></path>
+                                    </svg>
+										<!-- Half Star -->
+										<svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient
+												id="halfStarGrad" x1="0" y1="0" x2="1" y2="0">
+                                                <stop offset="50%"
+												stop-color="currentColor" />
+                                                <stop offset="50%"
+												stop-color="transparent" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+												d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+												fill="url(#halfStarGrad)"></path>
+                                    </svg>
+									</div>
+
+
+								</div>
+							</div>
+
+
+						</div>
+						<div class="swiper-pagination relative pt-10  "></div>
+					</div>
+
+
+				</div>
+
+				<!-- Pagination -->
+			</div>
+
+		</section>
 
 
 
@@ -2026,6 +1724,84 @@ function scrollToTop() {
 		    window.addEventListener("load", checkCounters);
 	 	    
 
+		    
+		    const placedCounters = document.querySelectorAll(".placed-count");
+
+		    function runPlacementCounter(counterEl) {
+		      const finalValue = +counterEl.getAttribute("data-placed");
+		      let startValue = 0;
+		      const animationTime = 2000; // total duration
+		      const step = finalValue > 1000 ? Math.ceil(finalValue / 100) : 1;
+
+		      function incrementValue() {
+		        startValue += step;
+		        if (startValue > finalValue) startValue = finalValue;
+		        counterEl.textContent = startValue + "+";
+
+		        if (startValue < finalValue) {
+		          requestAnimationFrame(incrementValue);
+		        }
+		      }
+
+		      incrementValue();
+		    }
+
+		    function elementVisibleInView(element) {
+		      const dimensions = element.getBoundingClientRect();
+		      return (
+		        dimensions.top <= window.innerHeight &&
+		        dimensions.bottom >= 0
+		      );
+		    }
+
+		    function initializePlacementCounters() {
+		      placedCounters.forEach((counterItem) => {
+		        if (!counterItem.classList.contains("already-counted") && elementVisibleInView(counterItem)) {
+		          runPlacementCounter(counterItem);
+		          counterItem.classList.add("already-counted");
+		        }
+		      });
+		    }
+
+		    window.addEventListener("scroll", initializePlacementCounters);
+		    window.addEventListener("load", initializePlacementCounters);
+		    
+		    
+		    
+		    /// Student Testimonial
+
+		    const swiperdemo = new Swiper(".swiperText", {
+		                slidesPerView: 1,
+		                spaceBetween: 20,
+		                loop: true,
+		                navigation: {
+		                    nextEl: "#slider-button-right",
+		                    prevEl: "#slider-button-left",
+		                },
+		                pagination: {
+		                    el: ".swiper-pagination",
+		                    clickable: true,
+		                },
+		                autoplay: {
+		                    delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3s)
+		                    disableOnInteraction: false, // Keeps autoplay running even after user interacts
+		                },
+		                breakpoints: {
+		                    640: {
+		                        slidesPerView: 1,
+		                        spaceBetween: 24,
+		                    },
+		                    768: {
+		                        slidesPerView: 2,
+		                        spaceBetween: 28,
+		                    },
+		                    1024: {
+		                        slidesPerView: 2,
+		                        spaceBetween: 32,
+		                    },
+		                },
+		            });
+		    	
   </script>
 </body>
 

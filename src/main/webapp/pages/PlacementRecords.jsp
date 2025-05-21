@@ -1,27 +1,28 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java"%>
 <!doctype html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Pune's Best IT Training & Job-Oriented Institute |
-	Envision</title>
+<title>Top IT Courses in Pune | Envision Training Programs</title>
 <meta name="description"
-	content="Pune's best IT Training & Job-Oriented Institute | Envision for hands-on experience and lifetime placement assistance until you secure a job.">
+	content="Explore job-oriented IT courses at Envision – Pune's best training institute. Get expert training with hands-on practice and 100% placement assistance.">
 <meta name="robots"
 	content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://ecti.co.in/" />
+<link rel="canonical" href="https://ecti.co.in/courses" />
 
 <!-- Open Graph Meta -->
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Home ECTI" />
-<meta property="og:description" content="ECTI" />
-<meta property="og:url" content="https://ecti.co.in/" />
+<meta property="og:title" content="Top IT Courses in Pune | Envision" />
+<meta property="og:description"
+	content="Join Envision's industry-focused IT courses with practical sessions and lifetime placement support.">
+<meta property="og:url" content="https://ecti.co.in/courses" />
 <meta property="og:site_name" content="ECTI" />
 <meta property="og:image"
-	content="https://ecti.co.in/wp-content/uploads/2024/09/banner-img-1.png" />
+	content="https://ecti.co.in/wp-content/uploads/2024/09/courses-banner.png" />
 
 <!-- Twitter Meta -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -29,11 +30,13 @@
 
 <!-- Favicon -->
 <link rel="icon"
-	href="${pageContext.request.contextPath}/webapp/images/Favicon.png"
+	href="${pageContext.request.contextPath}/images/Favicon.png"
 	sizes="16x16" type="image/png" />
 
-<!-- Tailwind CSS & FontAwesome -->
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts & Icons -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <link
@@ -43,340 +46,157 @@
 <!-- Custom CSS -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/index.css" />
+
 <!-- Custom JS -->
-<script src="${pageContext.request.contextPath}/JS/index.js" defer></script>
+<script src="${pageContext.request.contextPath}/JS/courses.js" defer></script>
 
-
-<!-- SwiperJS CSS -->
+<!-- SwiperJS -->
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<!-- SwiperJS Script -->
 <script
 	src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- AOS Animation Library -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-	rel="stylesheet">
+<!-- AOS Animation -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
 </head>
 
 <body class="bg-[#f7f9fa] text-[#004a6e]">
 
-	<!-- Enquiry Form 	-->
-	<div
-		class="fixed inset-0  top-24  flex items-center justify-center z-50"
-		id="overlay">
-		<div
-			class="relative bg-white/40 backdrop-blur-xl rounded-3xl shadow-2xl p-3 sm:p-8 md:p-10 w-full max-w-xs sm:max-w-md md:max-w-lg transition duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-			<!-- Close Button -->
-			<button id="closeBtn"
-				class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl sm:text-3xl md:text-4xl font-bold sm:font-thin transition-transform duration-300">
-				&times;</button>
-
-			<!-- Header -->
-			<h1
-				class="text-lg sm:text-xl md:text-2xl font-extrabold text-gray-800 text-center mb-6 sm:mb-8 tracking-wide">
-				Get a Free Career Consultation!</h1>
-
-			<!-- Form -->
-			<form method="post" action="inquireConsult"
-				class="space-y-4 sm:space-y-6" onsubmit="return validateForm()">
-				<!-- Name -->
-				<div>
-					<input type="text" name="name" id="name" placeholder="Full Name"
-						class="w-full text-sm sm:text-base md:text-lg p-3 sm:p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-sm transition" />
-				</div>
-
-				<!-- Email -->
-				<div>
-					<input type="email" name="email" id="email" placeholder="Email ID"
-						class="w-full text-sm sm:text-base md:text-lg p-3 sm:p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-4 focus:ring-purple-300 shadow-sm transition" />
-				</div>
-
-				<!-- Contact with Country Code -->
-				<div class="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center">
-					<!-- Country Code -->
-					<div class="relative w-full sm:w-24">
-						<label for="countryCode" class="sr-only">Country Code</label> <select
-							name="countryCode" id="countryCode"
-							class="w-full text-sm sm:text-base md:text-lg p-3 sm:p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-4 focus:ring-purple-300 shadow-sm transition">
-							<option value="+91">+91</option>
-							<option value="+1">+1</option>
-							<option value="+44">+44</option>
-							<option value="+61">+61</option>
-							<option value="+81">+81</option>
-							<option value="+49">+49</option>
-							<option value="+33">+33</option>
-							<option value="+39">+39</option>
-							<option value="+34">+34</option>
-							<option value="+39">+39</option>
-						</select>
-					</div>
-
-					<!-- Contact Number -->
-					<div class="flex-1 w-full">
-						<label for="contact" class="sr-only">Contact Number</label> <input
-							type="tel" name="contact" id="contact"
-							placeholder="10-digit Mobile Number" pattern="[0-9]{10}"
-							title="Enter a valid 10-digit number"
-							class="w-full text-sm sm:text-base md:text-lg p-3 sm:p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-4 focus:ring-purple-300 shadow-sm transition" />
-					</div>
-				</div>
-
-				<!-- Submit Button -->
-				<div>
-					<button type="submit"
-						class="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white text-sm sm:text-base md:text-lg py-3 sm:py-4 rounded-xl font-semibold hover:animate-pulse transition duration-300">
-						Submit</button>
-				</div>
-			</form>
-		</div>
-	</div>
-
 	<!-- Header -->
 	<div class="absolute top-0 left-0 z-50 w-full">
-
-		<jsp:include page="/pages/header.jsp" />
+		<jsp:include page="header.jsp" />
 	</div>
-	<!-- Hero Section -->
-	<main class="block overflow-hidden">
 
-		<div
-			class="max-w-[1280px] mx-auto px-6 md:px-10 mt-28 md:mt-[100px] md:pt-20 flex flex-col md:flex-row items-start gap-10 md:gap-20">
+	<!-- Floating Social Icons -->
+	<div aria-label="Social media links"
+		class="fixed top-1/3 -right-1 transform -translate-y-1/2 flex flex-col space-y-3 z-50 bg-blue-100 rounded-lg p-4 shadow-lg"
+		data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+		<a aria-label="Instagram" href="#"
+			class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:opacity-90">
+			<i class="fab fa-instagram"></i>
+		</a> <a aria-label="Facebook" href="#"
+			class="w-10 h-10 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-90">
+			<i class="fab fa-facebook-f"></i>
+		</a> <a aria-label="LinkedIn" href="#"
+			class="w-10 h-10 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-90">
+			<i class="fab fa-linkedin-in"></i>
+		</a> <a aria-label="YouTube" href="#"
+			class="w-10 h-10 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-90">
+			<i class="fab fa-youtube"></i>
+		</a>
+	</div>
 
-			<!-- Left Section -->
-			<section class="flex-1 max-w-xl" data-aos="fade-right">
-				<h1 class="text-3xl sm:text-4xl font-semibold leading-tight mb-8"
-					data-aos="zoom-in">Pune's best IT Training &amp; Job-Oriented
-					Institute</h1>
-				<p class="text-sm sm:text-base leading-relaxed mb-10"
-					data-aos="fade-up">Gain hands-on experience, learn from
-					industry experts, and secure job placement in top IT companies.
-					Enroll in ECTI Pune's best IT Training &amp; Job-Oriented Institute
-					for Full Stack Development courses with lifetime career support.</p>
+	<!-- Main Content -->
+	<main class="relative block overflow-hidden mt-28">
 
-				<div
-					class="flex flex-wrap items-center space-x-2 mb-10 text-sm font-semibold"
-					data-aos="fade-up">
-					<i class="fas fa-map-marker-alt mt-1 text-[1rem]"></i> <span
-						class="text-[1rem] font-bold">Branches</span> <a href="#"
-						class="underline hover:text-[#007fc1] pl-5">Bibwewadi</a> <a
-						href="#" class="underline hover:text-[#007fc1] pl-5">FC Road</a> <a
-						href="#" class="underline hover:text-[#007fc1] pl-5">Hadapsar</a>
+		<!-- heading page tile witch section or page is current  -->
+
+		<!-- Breadcrumb fixed at top left -->
+		<div class="px-5 md:px-16 py-5">
+			<div
+				class="flex items-center space-x-2 text-gray-600 text-sm font-medium"
+				id="breadcrumb-container">
+				<div class="relative group cursor-pointer hover:text-blue-600">
+					<span
+						class="breadcrumb-item after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 after:mt-0.5 group-hover:after:w-full active:after:w-full">
+						Home </span>
 				</div>
-
-				<div class="flex flex-wrap gap-4" data-aos="fade-up">
-					<button
-						class="bg-[#004a6e] text-white rounded-lg px-6 py-3 font-semibold text-sm flex items-center space-x-2 hover:bg-[#003a56] transition">
-						<i class="fas fa-paper-plane"></i><span>Get Free
-							Consultation</span>
-					</button>
-					<button
-						class="bg-[#004a6e] text-white rounded-lg px-6 py-3 font-semibold text-sm flex items-center space-x-2 hover:bg-[#003a56] transition">
-						<i class="fab fa-whatsapp"></i><span>WhatsApp</span>
-					</button>
+				<span>/</span>
+				<div class="relative group cursor-pointer hover:text-blue-600">
+					<span
+						class="breadcrumb-item after:block after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 after:mt-0.5 group-hover:after:w-full active:after:w-full">
+						Placement </span>
 				</div>
-			</section>
-
-			<!-- Right Section -->
-			<section class="flex-1 relative max-w-lg w-full" data-aos="fade-left">
-				<img
-					src="https://storage.googleapis.com/a1aa/image/7dab5820-8f7c-4be8-909b-e56dccdf984a.jpg"
-					alt="Student learning" class="rounded-xl w-5/6 h-auto object-cover"
-					data-aos="zoom-in" />
-
-				<div class="flex -space-x-5 mt-4" data-aos="fade-up">
-					<img
-						src="https://storage.googleapis.com/a1aa/image/3a1a3b59-07a9-403a-711e-2fff2982b313.jpg"
-						alt="Smiling female student"
-						class="rounded-full border-4 border-white shadow-md w-14 h-14 object-cover" />
-					<img
-						src="https://storage.googleapis.com/a1aa/image/a88ef335-3557-4ba4-2091-b97532322199.jpg"
-						alt="Male student with headphones"
-						class="rounded-full border-4 border-white shadow-md w-14 h-14 object-cover" />
-					<img
-						src="https://storage.googleapis.com/a1aa/image/a3a8d69f-6fb0-4142-2a7b-6950a92e4bfb.jpg"
-						alt="Female student with glasses"
-						class="rounded-full border-4 border-white shadow-md w-14 h-14 object-cover" />
-					<img
-						src="https://storage.googleapis.com/a1aa/image/10367823-6be1-40e6-ac20-8f3ba13e4821.jpg"
-						alt="Male student with glasses"
-						class="rounded-full border-4 border-white shadow-md w-14 h-14 object-cover" />
-				</div>
-
-				<p class="text-sm mt-2" data-aos="fade-up">10000+ Happy
-					Students.</p>
-				<p class="text-sm flex items-center space-x-1" data-aos="fade-up">
-					<span>You could be next</span>
-					<svg class="w-4 h-4 text-[#007fc1]" fill="none"
-						stroke="currentColor" viewBox="0 0 24 24">
-				<line x1="5" y1="12" x2="19" y2="12" />
-				<polyline points="12 5 19 12 12 19" />
-			</svg>
-				</p>
-
-				<!-- Advantages Box -->
-				<div
-					class="absolute bottom-0 right-0 bg-[#004a6e] rounded-xl p-4 w-72 text-white shadow-lg translate-x-6 translate-y-6"
-					data-aos="fade-up">
-					<h3
-						class="font-semibold bg-[#003a56] rounded-t-xl px-4 py-2 -mx-4 -mt-4">Advantages</h3>
-					<ul class="mt-3 space-y-3 text-sm font-semibold">
-						<li class="flex items-start space-x-2"><i
-							class="fas fa-check-circle mt-1"></i><span>Lifetime
-								placement assistant Till You Get A Job</span></li>
-						<li class="flex items-start space-x-2"><i
-							class="fas fa-check-circle mt-1"></i><span>Unlimited
-								Placement Calls</span></li>
-						<li class="flex items-start space-x-2"><i
-							class="fas fa-check-circle mt-1"></i><span>Affordable cost</span></li>
-						<li class="flex items-start space-x-2"><i
-							class="fas fa-check-circle mt-1"></i><span>10+ years
-								industry experienced trainers</span></li>
-					</ul>
-				</div>
-			</section>
-		</div>
-
-		<div aria-label="Social media links"
-			class="fixed top-1/3 -right-1 transform -translate-y-1/2 flex flex-col space-y-3 z-50 bg-blue-100 rounded-lg p-4 shadow-lg"
-			data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-
-			<a aria-label="Instagram" href="#"
-				class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:opacity-90">
-				<i class="fab fa-instagram"></i>
-			</a> <a aria-label="Facebook" href="#"
-				class="w-10 h-10 rounded-full bg-[#3b5998] text-white flex items-center justify-center hover:opacity-90">
-				<i class="fab fa-facebook-f"></i>
-			</a> <a aria-label="LinkedIn" href="#"
-				class="w-10 h-10 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:opacity-90">
-				<i class="fab fa-linkedin-in"></i>
-			</a> <a aria-label="YouTube" href="#"
-				class="w-10 h-10 rounded-full bg-[#ff0000] text-white flex items-center justify-center hover:opacity-90">
-				<i class="fab fa-youtube"></i>
-			</a>
+			</div>
 		</div>
 
 
 
-		<!-- Stats Section -->
+
+		<!-- main Sections is start in course page  -->
 		<section
-			class=" mt-20 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-200  rounded-none md:rounded-3xl mx-6 my-8 py-16 px-8 flex flex-wrap justify-center gap-x-20 gap-y-8 max-w-7xl mx-auto shadow-lg"
-			data-aos="fade-up" data-aos-duration="1000">
+			class="flex flex-col md:flex-row gap-10 md:gap-20 max-w-7xl mx-auto px-5 py-5 md:py-1 md:px-6">
+			<div class="max-w-xl flex flex-col gap-6">
 
-			<div class="text-center min-w-[120px]" data-aos="zoom-in"
-				data-aos-delay="100">
-				<h2
-					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
-					data-target="24">0+</h2>
-				<p
-					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Teaching
-					Expertise</p>
-			</div>
-			<div class="text-center min-w-[120px]" data-aos="zoom-in"
-				data-aos-delay="200">
-				<h2
-					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
-					data-target="10">0+</h2>
-				<p
-					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Professional
-					Courses</p>
-			</div>
-			<div class="text-center min-w-[120px]" data-aos="zoom-in"
-				data-aos-delay="300">
-				<h2
-					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
-					data-target="10000">0+</h2>
-				<p
-					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Students
-					Trust</p>
-			</div>
-			<div class="text-center min-w-[120px]" data-aos="zoom-in"
-				data-aos-delay="400">
-				<h2
-					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
-					data-target="100">0%</h2>
-				<p
-					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Satisfaction
-					Rate</p>
-			</div>
-		</section>
+				<h1 class="text-3xl md:text-5xl font-semibold leading-tight">
+					Envision Placement Record – Empowering Careers with Lifetime Job
+					Assistance</h1>
+				<p class="text-[1rem] md:text-base leading-relaxed text-[#00405f]">
+					Envision Placement Record - We connect talented individuals with
+					promising career opportunities. Through our industry-focused IT
+					training programs and strong employer network, we equip students
+					with the skills to excel. As a result, our students are better
+					prepared for the real-world job market. Explore our placement
+					services, and let ECTI guide you toward a successful career.</p>
+				<div class="flex justify-center lg:justify-start">
+					<button
+						class="relative overflow-hidden w-auto h-12 border-2 border-green-600 rounded-lg px-6 flex items-center justify-center bg-green-600 hover:bg-white transition-all duration-300 text-white hover:text-green-600 font-semibold group">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 -ml-1"
+							fill="none" viewBox="0 0 24 24" stroke="currentColor"
+							stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+								d="M12 4v16m8-8H4" />
+        </svg>
 
-		<!-- Video Testimonials Section -->
-		<section class="max-w-7xl mx-auto px-6 mb-16 flex-grow">
-			<h3
-				class="text-blue-900 text-2xl md:text-3xl font-extrabold mb-3 text-center max-w-md mx-auto tracking-tight"
-				data-aos="fade-down" data-aos-duration="1000">Students Video
-				Testimonial</h3>
-			<p
-				class="text-center text-blue-800 font-semibold text-base md:text-lg mb-10 max-w-md mx-auto tracking-wide"
-				data-aos="fade-up" data-aos-delay="200">Hear it from our
-				students—real stories, real success</p>
-
-			<div class="flex flex-wrap justify-center gap-8 mb-10 px-2 md:px-0"
-				aria-label="Video testimonials">
-				<div
-					class="w-[280px] sm:w-[320px] md:w-[360px] border border-blue-300 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white"
-					data-aos="fade-right" data-aos-delay="100">
-					<img alt="Student video testimonial 1" class="w-full rounded-xl"
-						height="200"
-						src="https://storage.googleapis.com/a1aa/image/08b43cd4-68ec-4cfe-79a1-083d387a9571.jpg"
-						width="360" loading="lazy" />
-				</div>
-				<div
-					class="w-[280px] sm:w-[320px] md:w-[360px] border border-blue-300 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white"
-					data-aos="fade-up" data-aos-delay="200">
-					<img alt="Student video testimonial 2" class="w-full rounded-xl"
-						height="200"
-						src="https://storage.googleapis.com/a1aa/image/60398e1f-d375-4cd8-4139-ce9f68a9425c.jpg"
-						width="360" loading="lazy" />
-				</div>
-				<div
-					class="w-[280px] sm:w-[320px] md:w-[360px] border border-blue-300 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white"
-					data-aos="fade-down" data-aos-delay="300">
-					<img alt="Student video testimonial 3" class="w-full rounded-xl"
-						height="200"
-						src="https://storage.googleapis.com/a1aa/image/886276d1-3266-41e9-75b1-aa0d553b8dc6.jpg"
-						width="360" loading="lazy" />
-				</div>
-				<div
-					class="w-[280px] sm:w-[320px] md:w-[360px] border border-blue-300 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white"
-					data-aos="fade-left" data-aos-delay="400">
-					<img alt="Student video testimonial 4" class="w-full rounded-xl"
-						height="200"
-						src="https://storage.googleapis.com/a1aa/image/0ba9ab06-23d1-46b2-0026-400afa905a7a.jpg"
-						width="360" loading="lazy" />
+						<span class="z-10">Enroll Now</span> <span
+							class="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition-all duration-500"></span>
+					</button>
 				</div>
 			</div>
-
-			<div class="flex justify-center" data-aos="zoom-in-up"
-				data-aos-delay="300">
-				<button
-					class="bg-blue-900 text-white text-base font-semibold rounded-lg px-8 py-3 hover:bg-blue-800 shadow-lg transition duration-300"
-					type="button">Discover More</button>
+			<div class="relative flex-1 max-w-full md:max-w-lg rounded-xl">
+				<img
+					src="${pageContext.request.contextPath}/images/banner-img-1.png"
+					alt="Two people, a woman in a mustard yellow sweater and a man in a patterned sweater, looking at a laptop screen together in an office setting"
+					class="w-full h-auto object-cover rounded-xl" width="600"
+					height="400" />
+				<div
+					class="absolute top-4 -left-5 bg-white rounded-xl p-4 w-40 shadow-md flex flex-col">
+					<div
+						class="flex items-center justify-center gap-1 bg-[#cce7f7] rounded-full px-2 py-0.5 mb-2">
+						<i class="fas fa-star text-yellow-400 text-xs"></i> <i
+							class="fas fa-star text-yellow-400 text-xs"></i> <i
+							class="fas fa-star text-yellow-400 text-xs"></i> <i
+							class="fas fa-star text-[#00405f] text-xs"></i> <i
+							class="fas fa-star text-[#00405f] text-xs"></i>
+					</div>
+					<p class="text-2xl font-semibold leading-none">4.5/5</p>
+					<p class="text-xs text-[#00405f] mt-1">Average rating on google</p>
+				</div>
+				<div
+					class="absolute -top-6 right-6 bg-white rounded-xl p-4 w-32 shadow-md text-center">
+					<p class="text-3xl font-bold leading-none">10k+</p>
+					<p class="text-xs mt-1">Happy Students</p>
+				</div>
 			</div>
 		</section>
 
 
+		<!--   
+		logo slider 
+		-->
 
-		<!-- Logo Slider Section -->
-		<!-- Slider Section (Put inside <body>) -->
 		<section class="w-full py-5 md:py-16 transparent px-6 md:px-12 mb-16">
 
 
 			<!-- Heading with Animation and Hover -->
 			<div class="text-center mb-16 px-5 py-10" data-aos="fade-up"
 				data-aos-duration="1000">
+
+
 				<h2
 					class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 drop-shadow-md transition duration-300 hover:scale-105">
-					Our Students Placed In</h2>
+					<span class="placed-count " data-placed="3690">0+</span> Students
+					Placed <br> in Top Companies
+				</h2>
+
 				<p
 					class="text-lg sm:text-xl mt-4 text-gray-600 hover:text-indigo-700 transition duration-300 ease-in-out tracking-wide"
-					data-aos="fade-up" data-aos-delay="200">Top Companies Hiring
-					from Our Courses & Training Programs</p>
+					data-aos="fade-up" data-aos-delay="200">Through Our Courses and
+					Training Programs</p>
 			</div>
+
 			<!-- Left to Right Slider -->
 			<div class="swiper mySwiper max-w-6xl mx-auto px-4 mb-16  "
 				data-aos="fade-up" data-aos-duration="1000">
@@ -384,108 +204,125 @@
 				<div class="swiper-wrapper items-center">
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/affinity.webp" alt="Logo 1"
-							class="h-16 object-contain" />
+						<img src="${pageContext.request.contextPath}/images/affinity.webp"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/alten.svg" alt="Logo 1"
-							class="h-16 object-contain" />
+						<img src="${pageContext.request.contextPath}/images/alten.svg"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/aptlogica-300x113.png" alt="Logo 1"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/aptlogica-300x113.png"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/Axanator-300x113.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Capgemini.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/capgemini.webp" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/cognizant.webp" alt="Logo 1"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/Axanator-300x113.png"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/cost-effective.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img src="${pageContext.request.contextPath}/images/Capgemini.png"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/Deeporion-logo-300x103.jpeg" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/capgemini.webp"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/Deloitte.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/deloitte.webp" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/dorlecoa.webp" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/cognizant.webp"
+							alt="Logo 1" class="h-16 object-contain" />
 					</div>
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/dreams-international-final-logo-300x72.png"
+						<img
+							src="${pageContext.request.contextPath}/images/cost-effective.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/Deeporion-logo-300x103.jpeg"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/Deloitte.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/deloitte.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/dorlecoa.webp"
 							alt="Logo" class="h-16 object-contain" />
 					</div>
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/gephels.svg" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/heaptrace-technology-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/dreams-international-final-logo-300x72.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/images.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img src="${pageContext.request.contextPath}/images/gephels.svg"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/Logo_True_Colors.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/heaptrace-technology-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/images.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/logo-website.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/Logo_True_Colors.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/peaxskin-solutions-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/logo-website.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/rabbit-n-tortoise-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/peaxskin-solutions-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/sycamore-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/rabbit-n-tortoise-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/Tata_Consultancy_Services.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/sycamore-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/tcs.webp" alt="Logo" class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/Tata_Consultancy_Services.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/tech-mahindra.webp" alt="Logo"
-							class="h-16 object-contain" />
+						<img src="${pageContext.request.contextPath}/images/tcs.webp"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 					<div class="swiper-slide flex justify-center">
-						<img src="images/wqara7hha5bizbi4grxv.png" alt="Logo"
-							class="h-16 object-contain" />
+						<img
+							src="${pageContext.request.contextPath}/images/tech-mahindra.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/wqara7hha5bizbi4grxv.png"
+							alt="Logo" class="h-16 object-contain" />
 					</div>
 				</div>
 			</div>
@@ -496,112 +333,126 @@
 				<div class="swiper-wrapper items-center">
 
 					<div class="swiper-slide flex justify-center">
-						<img src="images/affinity.webp" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/alten.svg" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/aptlogica-300x113.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Axanator-300x113.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Capgemini.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/capgemini.webp" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/cognizant.webp" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-
-					<div class="swiper-slide flex justify-center">
-						<img src="images/cost-effective.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Deeporion-logo-300x103.jpeg" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Deloitte.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/deloitte.webp" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/dorlecoa.webp" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-
-					<div class="swiper-slide flex justify-center">
-						<img src="images/dreams-international-final-logo-300x72.png"
+						<img
+							src="${pageContext.request.contextPath}/images/wqara7hha5bizbi4grxv.png"
 							alt="Logo" class="h-16 object-contain" />
 					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/tech-mahindra.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/tcs.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/Tata_Consultancy_Services.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/sycamore-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/rabbit-n-tortoise-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/peaxskin-solutions-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/logo-website.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/Logo_True_Colors.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/images.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/heaptrace-technology-300x113.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/gephels.svg"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/dreams-international-final-logo-300x72.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/dorlecoa.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/deloitte.webp"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/Deloitte.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/Deeporion-logo-300x103.jpeg"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/cost-effective.png"
+							alt="Logo" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/cognizant.webp"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/capgemini.webp"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/Capgemini.png"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/Axanator-300x113.png"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img
+							src="${pageContext.request.contextPath}/images/aptlogica-300x113.png"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/alten.svg"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
+					<div class="swiper-slide flex justify-center">
+						<img src="${pageContext.request.contextPath}/images/affinity.webp"
+							alt="Logo 1" class="h-16 object-contain" />
+					</div>
 
-					<div class="swiper-slide flex justify-center">
-						<img src="images/gephels.svg" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/heaptrace-technology-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-
-					<div class="swiper-slide flex justify-center">
-						<img src="images/images.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Logo_True_Colors.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/logo-website.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/peaxskin-solutions-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/rabbit-n-tortoise-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/sycamore-300x113.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/Tata_Consultancy_Services.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/tcs.webp" alt="Logo" class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/tech-mahindra.webp" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
-					<div class="swiper-slide flex justify-center">
-						<img src="images/wqara7hha5bizbi4grxv.png" alt="Logo"
-							class="h-16 object-contain" />
-					</div>
 				</div>
 			</div>
 		</section>
+
 
 
 		<!--Testimonials -->
@@ -669,7 +520,8 @@
 									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
 									<img
 										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
-										src="images/Aditya-Garud.jpg" alt="Emily Johnson" />
+										src="${pageContext.request.contextPath}/images/Aditya-Garud.jpg"
+										alt="Emily Johnson" />
 									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Aditya
 										Garud</h3>
 								</div>
@@ -956,237 +808,6 @@
 		</section>
 
 
-		<!-- courses  -->
-		<section class="max-w-7xl mx-auto px-4 py-12">
-
-
-			<div class="text-center mb-12 px-4" data-aos="fade-up"
-				data-aos-duration="3000">
-				<h2
-					class="text-4xl font-extrabold text-[#004466] mb-4 tracking-wide">
-					ECTI’s Job-Oriented IT Programming Courses</h2>
-				<p class="max-w-3xl mx-auto text-[#007a99] text-lg leading-relaxed">
-					Propel your tech career with ECTI’s industry-aligned, job-focused
-					programming courses. Master Java Full Stack, Python, PHP, Embedded
-					Systems, and more through hands-on projects designed to build
-					real-world skills. Benefit from expert guidance and personalized
-					job support to land roles at top tech companies. Your path to
-					success starts here.</p>
-				<div class="mt-6 flex justify-center space-x-3">
-					<span
-						class="inline-block w-16 h-1 rounded-full bg-gradient-to-r from-[#00bcd4] to-[#004466] animate-pulse"></span>
-					<span
-						class="inline-block w-6 h-1 rounded-full bg-[#004466] opacity-50"></span>
-					<span
-						class="inline-block w-4 h-1 rounded-full bg-[#004466] opacity-25"></span>
-				</div>
-			</div>
-
-
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-				<!-- Each card below includes the creative Know More button -->
-
-				<!-- Java Full Stack -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#e0f4ff] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fas fa-laptop-code text-xl text-[#ff6f61]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Java Full
-								Stack Development</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Master
-							Java, Spring Boot, React.js, APIs & databases with real-world
-							projects. Become job-ready for enterprise development roles.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- Python Programming -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#d6eafd] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fab fa-python text-xl text-[#2b7bb9]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Python
-								Programming</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Learn
-							Python fundamentals, data science, web apps & automation using
-							hands-on labs and real scenarios.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- PHP Development -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#e0f4ff] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fab fa-php text-xl text-[#8892be]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">PHP Web
-								Development</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Build
-							robust websites using PHP, Laravel & MySQL with real-time CRUD
-							apps and MVC architecture.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- Embedded Systems -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#d6eafd] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fas fa-microchip text-xl text-[#a32cc4]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Embedded
-								Systems</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Learn
-							microcontroller programming, Embedded C, RTOS, and IoT system
-							integration hands-on.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- UI/UX Design -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#e0f4ff] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fas fa-pencil-ruler text-xl text-[#ffb347]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">UI/UX & Web
-								Design</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Master
-							Figma, Adobe XD, HTML, CSS & responsive design principles with
-							project-driven learning.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- Data Science -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#d6eafd] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fas fa-chart-line text-xl text-[#4caf50]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Data
-								Science & ML</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Explore
-							machine learning, data analysis, visualization, and Python
-							libraries like Pandas, NumPy, and scikit-learn.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- MERN Stack -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#e0f4ff] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fab fa-js-square text-xl text-[#f7df1e]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">MERN Stack
-								Development</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Full-stack
-							JavaScript training with MongoDB, Express, React & Node.js for
-							modern web app development.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- Cloud & DevOps -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#d6eafd] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fas fa-cloud text-xl text-[#00bcd4]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Cloud &
-								DevOps</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Get
-							hands-on with AWS, Docker, Kubernetes, CI/CD pipelines & cloud
-							architecture deployment practices.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-
-				<!-- Android App Dev -->
-				<div data-aos="fade-up" data-aos-duration="3000"
-					class="bg-[#e0f4ff] rounded-2xl p-6 shadow-lg hover:scale-105 transition-all duration-300 flex flex-col justify-between">
-					<div>
-						<div class="flex items-center gap-4 mb-4">
-							<i class="fab fa-android text-xl text-[#3ddc84]"></i>
-							<h3 class="text-[#004466] font-semibold text-lg">Android App
-								Development</h3>
-						</div>
-						<p class="text-[#004466] text-sm leading-relaxed mb-4">Design
-							and build modern Android apps using Kotlin, Android Studio &
-							Firebase integration.</p>
-					</div>
-					<button
-						class="group relative mt-4 self-start overflow-hidden rounded-lg bg-gradient-to-r from-[#00bcd4] to-[#004466] px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:from-[#004466] hover:to-[#00bcd4] hover:scale-105">
-						Know More <span
-							class="absolute inset-0 scale-0 bg-white/20 group-hover:scale-100 transition-transform duration-500 rounded-full blur-md"></span>
-					</button>
-				</div>
-			</div>
-
-
-			<div class="flex justify-center mt-10">
-				<a href="#"
-					class="relative inline-flex items-center gap-2 text-[#004466] text-lg font-semibold transition-all duration-300
-            hover:text-[#007a99] hover:gap-3 group">
-					<span class="relative z-10"> Explore All Courses </span> <i
-					class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
-
-					<!-- Hover underline using ::after --> <span
-					class="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-[#004466] to-[#00bcd4] scale-x-0 
-                 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
-
-					<!-- Glow/shine effect using ::before --> <span
-					class="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-[#00bcd4]/20 to-transparent
-                 opacity-0 group-hover:opacity-100 blur-md transition-all duration-500"></span>
-				</a>
-			</div>
-
-		</section>
 
 
 		<!-- Why Choose Us -->
@@ -1297,180 +918,91 @@
 		</section>
 
 
-		<!-- Chat directly on WhatsApp -->
-		<section
-			class="bg-gradient-to-br from-[#022c43] to-[#034069] text-white py-12 px-4 md:px-12 rounded-none sm:rounded-2xl shadow-2xl max-w-7xl mx-auto my-10"
-			data-aos="fade-up" data-aos-duration="1000">
-			<div class="flex flex-col md:flex-row gap-10 md:gap-0">
+		<section class="py-16 px-4 md:px-12" data-aos="fade-up"
+			data-aos-duration="1000">
+			<div class="max-w-6xl mx-auto">
+				<h2
+					class="text-4xl md:text-5xl font-bold  mb-6 text-center text-gradient bg-gradient-to-r from-[#00bcd4] to-[#004466] bg-clip-text text-transparent relative"
+					data-aos="zoom-in">Transform Your Career with ECTI’s Proven
+					Placement Support</h2>
 
-				<!-- Left Content -->
-				<div class="md:w-3/5 space-y-6" data-aos="fade-right"
-					data-aos-delay="200">
-					<h2
-						class="text-2xl md:text-3xl font-bold leading-snug text-white hover:text-[#c0dff0] transition duration-300">
-						🚀 Our Premier IT Courses at <br /> <span class="text-[#d0eafc]">Envision
-							Computer Training Institute Pvt. Ltd. (ECTIPL)</span>
-					</h2>
-					<p class="text-base md:text-lg text-[#e0f0fb]">Explore ECTI’s
-						leading IT courses in Pune, designed to build essential tech
-						skills and launch your career. Our offerings include:</p>
-					<ul
-						class="list-disc list-inside text-base space-y-2 text-[#d9e9f5]">
-						<li><span class="font-semibold text-white">Software
-								Development Course:</span> Java, Python, Full Stack, .NET, Embedded
-							Systems Programming, Autodesk Alias</li>
-						<li><span class="font-semibold text-white">Web
-								Development:</span> HTML, CSS, JavaScript, ReactJS, AngularJS</li>
-					</ul>
-					<p class="text-base text-[#e0f0fb]">Additionally, we offer
-						flexible learning options:</p>
-					<ul
-						class="list-disc list-inside text-base space-y-2 text-[#d9e9f5]">
-						<li><span class="font-semibold text-white">Classroom
-								Training:</span> Learn collaboratively with hands-on, instructor-led
-							classes.</li>
-						<li><span class="font-semibold text-white">Online/Offline
-								Training:</span> Study at your convenience from any location.</li>
-						<li><span class="font-semibold text-white">Weekend
-								Batches:</span> Upgrade skills without impacting your work schedule.</li>
-					</ul>
-				</div>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="100">
+					At <strong class="text-[#004466]">Envision Computer Training Institute (ECTI)</strong>, we
+					don’t just train you—we guide you all the way to your first job and
+					beyond. Our placement program is one of the strongest in Pune,
+					offering <strong>lifetime job assistance</strong> to every student.
+					Thanks to our tie-ups with top IT companies, your skills don’t just
+					stay on paper—they turn into <strong>real, rewarding
+						careers</strong>.
+				</p>
 
-				<!-- Right CTA -->
-				<div
-					class="md:w-2/5 md:border-l border-[#0a4a6a] md:pl-10 flex flex-col justify-center items-center text-center"
-					data-aos="fade-left" data-aos-delay="300">
-					<h3
-						class="text-2xl md:text-3xl font-semibold mb-4 text-[#c0dff0] hover:text-white transition duration-300">
-						💬 Chat directly on WhatsApp</h3>
-					<p class="text-base text-[#e6f7ff] mb-6 max-w-xs">Connect with
-						our experts to enroll now and get a free consultation.</p>
-					<button type="button"
-						class="bg-[#d9e9f5] text-[#034069] px-8 py-3 rounded-lg text-base font-semibold shadow-md hover:bg-[#c0dff0] hover:scale-105 hover:shadow-xl transition-all duration-300">
-						✨ Chat Now!</button>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="200">From resume building
+					and mock interviews to portfolio development and soft skills
+					training, our expert placement team supports you at every step.
+					Whether you’re a fresher or a working professional looking to
+					upgrade, we help you unlock new opportunities through targeted
+					guidance and industry-aligned preparation.</p>
+
+				<h3 class="text-2xl font-semibold text-[#004466] mt-10 mb-4"
+					data-aos="fade-up" data-aos-delay="300">Lifetime Placement
+					Assistance with Real-World Impact</h3>
+
+				<p class="text-lg text-gray-700 mb-4 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="400">Our placement process
+					is designed to help you succeed in a competitive job market. ECTI’s
+					dedicated placement cell provides:</p>
+
+				<ul
+					class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8"
+					data-aos="fade-up" data-aos-delay="500">
+					<li>Unlimited placement calls</li>
+					<li>Mock interviews with real-time feedback</li>
+					<li>Personalized job matching based on your skills and career
+						goals</li>
+					<li>LinkedIn portfolio assistance</li>
+					<li>Soft skills and interview coaching</li>
+				</ul>
+
+				<h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-4"
+					data-aos="fade-up" data-aos-delay="600">Success Stories That
+					Inspire</h3>
+
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="700">Join thousands of
+					students who’ve secured jobs at top companies like Infosys, TCS,
+					Tech Mahindra, Cognizant, and more. Our alumni network spans
+					leading MNCs and startups—many even return to ECTI to hire fresh
+					talent.</p>
+
+				<p class="text-lg text-gray-700 mb-10 leading-relaxed"
+					data-aos="fade-up" data-aos-delay="800">
+					With over <strong>10,000+ students placed</strong> and counting,
+					your success story could be next.
+				</p>
+
+				<div class="text-center mt-10" data-aos="zoom-in"
+					data-aos-delay="900">
+					<button
+						class="relative overflow-hidden w-auto h-12 border-2 border-green-600 rounded-lg px-6 flex items-center justify-center bg-green-600 hover:bg-white transition-all duration-300 text-white hover:text-green-600 font-semibold group">
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 -ml-1"
+							fill="none" viewBox="0 0 24 24" stroke="currentColor"
+							stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+								d="M12 4v16m8-8H4" />
+    </svg>
+
+						<span class="z-10">Get Started with ECTI Today</span> <span
+							class="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition-all duration-500">
+						</span>
+					</button>
 				</div>
 
 			</div>
 		</section>
 
-		<!--  Our Team Section -->
-		<section class="py-16 px-6 md:px-12">
-			<div
-				class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-start"
-				data-aos="fade-up">
-
-				<!-- TEAM MEMBERS -->
-				<div class="md:w-1/2 space-y-6 order-2 md:order-1 w-full">
-
-					<!-- CARD 1 -->
-					<div
-						class="relative group overflow-hidden rounded-xl bg-white shadow-lg border border-[#c3e0f5] hover:shadow-xl transition duration-300 hover:scale-[1.02]"
-						data-aos="fade-up" data-aos-delay="100">
-						<div class="flex items-center p-5 gap-4 relative z-10">
-							<img src="https://randomuser.me/api/portraits/women/45.jpg"
-								alt="Rasika Kulkarni"
-								class="w-20 h-20 rounded-full border-4 border-[#034069] transition duration-300 group-hover:rotate-2 group-hover:scale-105" />
-							<div>
-								<h3 class="text-xl font-bold text-[#034069]">Mrs. Rasika
-									Kulkarni</h3>
-								<p class="text-gray-600">Trainer | Java, Python, Full Stack</p>
-							</div>
-						</div>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-[#034069]/10 via-transparent to-[#034069]/10 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
-					</div>
-
-					<!-- CARD 2 -->
-					<div
-						class="relative group overflow-hidden rounded-xl bg-white shadow-lg border border-[#c3e0f5] hover:shadow-xl transition duration-300 hover:scale-[1.02]"
-						data-aos="fade-up" data-aos-delay="200">
-						<div class="flex items-center p-5 gap-4 relative z-10">
-							<img src="https://randomuser.me/api/portraits/women/48.jpg"
-								alt="Shital Patil"
-								class="w-20 h-20 rounded-full border-4 border-[#034069] transition duration-300 group-hover:rotate-2 group-hover:scale-105" />
-							<div>
-								<h3 class="text-xl font-bold text-[#034069]">Mrs. Shital V.
-									Patil</h3>
-								<p class="text-gray-600">Trainer | .NET, Embedded Systems</p>
-							</div>
-						</div>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-[#034069]/10 via-transparent to-[#034069]/10 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
-					</div>
-
-					<!-- CARD 3 -->
-					<div
-						class="relative group overflow-hidden rounded-xl bg-white shadow-lg border border-[#c3e0f5] hover:shadow-xl transition duration-300 hover:scale-[1.02]"
-						data-aos="fade-up" data-aos-delay="300">
-						<div class="flex items-center p-5 gap-4 relative z-10">
-							<img src="https://randomuser.me/api/portraits/women/52.jpg"
-								alt="Ketaki Atre"
-								class="w-20 h-20 rounded-full border-4 border-[#034069] transition duration-300 group-hover:rotate-2 group-hover:scale-105" />
-							<div>
-								<h3 class="text-xl font-bold text-[#034069]">Mrs. Ketaki S.
-									Atre</h3>
-								<p class="text-gray-600">Trainer | UI/UX, Project Guidance</p>
-							</div>
-						</div>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-[#034069]/10 via-transparent to-[#034069]/10 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
-					</div>
-
-					<!-- CARD 4 -->
-					<div
-						class="relative group overflow-hidden rounded-xl bg-white shadow-lg border border-[#c3e0f5] hover:shadow-xl transition duration-300 hover:scale-[1.02]"
-						data-aos="fade-up" data-aos-delay="400">
-						<div class="flex items-center p-5 gap-4 relative z-10">
-							<img src="https://randomuser.me/api/portraits/men/49.jpg"
-								alt="Hemant Sir"
-								class="w-20 h-20 rounded-full border-4 border-[#034069] transition duration-300 group-hover:rotate-2 group-hover:scale-105" />
-							<div>
-								<h3 class="text-xl font-bold text-[#034069]">Mr. Hemant</h3>
-								<p class="text-gray-600">Head | Web Development Coaching</p>
-							</div>
-						</div>
-						<div
-							class="absolute inset-0 bg-gradient-to-r from-[#034069]/10 via-transparent to-[#034069]/10 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
-					</div>
-				</div>
-
-				<!-- TEAM DESCRIPTION -->
-				<div
-					class="md:w-1/2 space-y-4 text-[#034069] order-1 md:order-2 w-full"
-					data-aos="fade-left">
-					<h2 class="text-3xl md:text-4xl font-bold mb-2">Our Team</h2>
-					<p>Our leadership team is dedicated to providing quality
-						education and driving innovation.</p>
-					<p>They bring expertise in various technologies, ensuring
-						top-quality training for every learner.</p>
-					<p>We foster an environment that promotes growth, learning, and
-						career success.</p>
-					<p>Additionally, our strong industry connections help students
-						secure top job opportunities.</p>
-					<p>With personalized mentoring and doubt-solving sessions, we
-						focus on career-oriented development.</p>
-					<p>Many of our trainers have real-time project experience
-						across different domains.</p>
-					<p>The team includes highly experienced professionals from
-						diverse technical backgrounds.</p>
-
-					<!-- MEET TEAM BUTTON -->
-					<div class="flex justify-center md:justify-start mt-12 pt-10"
-						data-aos="fade-up" data-aos-delay="500">
-						<a href="#"
-							class="relative inline-flex items-center gap-2 text-[#004466] text-lg font-semibold transition-all duration-300 group hover:text-[#007a99] hover:gap-3">
-							<span class="relative z-10">Meet Team ECTI</span> <i
-							class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
-							<span
-							class="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-[#004466] to-[#00bcd4] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
-							<span
-							class="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-[#00bcd4]/20 to-transparent opacity-0 group-hover:opacity-100 blur-md transition-all duration-500"></span>
-						</a>
-						<p class="font-semibold ml-5">the mentors behind the success.</p>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<!--  Review Slider  -->
 
@@ -1590,15 +1122,16 @@
 								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
 
 								<!-- Top-left Google icon (Google's multicolor SVG) -->
-								<img src="images/google.png" alt="Google Logo"
-									class="absolute top-2 right-5 w-8 h-8" />
+								<img src="${pageContext.request.contextPath}/images/google.png"
+									alt="Google Logo" class="absolute top-2 right-5 w-8 h-8" />
 
 								<!-- Profile Image & Name -->
 								<div
 									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
 									<img
 										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
-										src="images/Aditya-Garud.jpg" alt="Emily Johnson" />
+										src="${pageContext.request.contextPath}/images/Aditya-Garud.jpg"
+										alt="Emily Johnson" />
 									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Aditya
 										Garud</h3>
 								</div>
@@ -1680,15 +1213,16 @@
 								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
 
 								<!-- Top-left Google icon (Google's multicolor SVG) -->
-								<img src="images/google.png" alt="Google Logo"
-									class="absolute top-2 right-5 w-8 h-8" />
+								<img src="${pageContext.request.contextPath}/images/google.png"
+									alt="Google Logo" class="absolute top-2 right-5 w-8 h-8" />
 
 								<!-- Profile Image & Name -->
 								<div
 									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
 									<img
 										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
-										src="images/Aditya-Garud.jpg" alt="Emily Johnson" />
+										src="${pageContext.request.contextPath}/images/Aditya-Garud.jpg"
+										alt="Emily Johnson" />
 									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Aditya
 										Garud</h3>
 								</div>
@@ -1771,15 +1305,16 @@
 								class="swiper-slide bg-gray-100 rounded-xl p-6 sm:p-8 shadow-lg text-gray-800 block sm:block items-center gap-6 sm:gap-10 transition-all duration-300 hover:shadow-2xl">
 
 								<!-- Top-left Google icon (Google's multicolor SVG) -->
-								<img src="images/google.png" alt="Google Logo"
-									class="absolute top-2 right-5 w-8 h-8" />
+								<img src="${pageContext.request.contextPath}/images/google.png"
+									alt="Google Logo" class="absolute top-2 right-5 w-8 h-8" />
 
 								<!-- Profile Image & Name -->
 								<div
 									class="flex flex-row items-center justify-start text-center gap-5 mb-5">
 									<img
 										class="rounded object-cover w-24 h-24 sm:w-28 sm:h-28 border-4 border-white shadow-md"
-										src="images/Aditya-Garud.jpg" alt="Emily Johnson" />
+										src="${pageContext.request.contextPath}/images/Aditya-Garud.jpg"
+										alt="Emily Johnson" />
 									<h3 class="text-xl sm:text-2xl font-semibold text-gray-900">Aditya
 										Garud</h3>
 								</div>
@@ -1869,281 +1404,119 @@
 		</section>
 
 
-		<!-- about us section -->
+
+		<!-- Stats Section -->
 		<section
-			class="max-w-7xl mx-auto my-10 bg-[#e4f1f6] rounded-2xl px-6 py-10 flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-24 relative overflow-hidden"
+			class=" mt-20 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-200  rounded-none md:rounded-3xl mx-6 my-8 py-16 px-8 flex flex-wrap justify-center gap-x-20 gap-y-8 max-w-7xl mx-auto shadow-lg"
 			data-aos="fade-up" data-aos-duration="1000">
 
-			<!-- Text Content -->
-			<div
-				class="md:w-2/3 text-[#004a6e] flex flex-col justify-center z-10"
-				data-aos="fade-right" data-aos-duration="1200">
+			<div class="text-center min-w-[120px]" data-aos="zoom-in"
+				data-aos-delay="100">
 				<h2
-					class="font-semibold text-xl sm:text-2xl md:text-3xl mb-6 md:mb-8 leading-tight">
-					About ECTI</h2>
+					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
+					data-target="24">0+</h2>
 				<p
-					class="text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose mb-8 max-w-xl">
-					Since its establishment in 1999, Envision Computer Training
-					Institute Pvt. Ltd. (ECTIPL) has been meeting the growing demand
-					for technical expertise in both social and business contexts. This
-					computer institute in Pune has made significant strides in
-					programming and engineering education, serving as a reliable
-					educational facilitator and consistently producing industry-ready
-					professionals. Envision has consistently aimed to build a robust
-					technical foundation for students, grounded in its core values and
-					competencies in technical excellence, quality training, and
-					innovative concepts.</p>
-				<button
-					class="bg-[#004a6e] hover:bg-[#003a56] transition text-white text-sm sm:text-base font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg w-fit"
-					aria-label="Explore more about ECTI" data-aos="zoom-in"
-					data-aos-delay="300">
-					Explore More <i
-						class="fas fa-arrow-right text-sm pl-2 transition-transform duration-300 group-hover:translate-x-1"></i>
-				</button>
+					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Teaching
+					Expertise</p>
 			</div>
-
-			<!-- Larger Image at Bottom -->
-			<div class="md:w-1/3 flex justify-center items-end relative z-0"
-				data-aos="fade-left" data-aos-duration="1200">
-				<img src="images/about-us.png"
-					alt="Woman with curly hair wearing a blue t-shirt and jeans holding a white signboard with text 'Lifetime Job Assistance Courses' in dark blue"
-					class="w-72 sm:w-80 md:w-96 lg:w-[420px] xl:w-[460px] h-auto rounded-xl object-contain md:absolute md:bottom-0"
-					width="460" height="520" />
+			<div class="text-center min-w-[120px]" data-aos="zoom-in"
+				data-aos-delay="200">
+				<h2
+					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
+					data-target="10">0+</h2>
+				<p
+					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Professional
+					Courses</p>
 			</div>
-		</section>
-
-
-		<!-- blog Section -->
-
-		<section class="w-full max-w-7xl mx-auto p-4 sm:p-6 md:p-10">
-			<h2
-				class="relative inline-block text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-10 group"
-				data-aos="fade-up">
-				Recent Blog Posts <span
-					class="absolute left-0 -bottom-1.5 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-1/2"></span>
-			</h2>
-
-			<div class="flex flex-col md:flex-row md:space-x-10">
-				<!-- Left big post -->
-				<div class="md:flex-1" data-aos="fade-right">
-					<img src="images/banner-img-1.png"
-						alt="Students learning at ECTI Institute in Pune"
-						class="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover mb-4 md:mb-6 rounded-sm" />
-					<p class="text-xs sm:text-sm leading-5 text-gray-700 mb-1">ECTI
-						Pune • 18 May 2025</p>
-					<h3
-						class="font-semibold text-lg sm:text-xl md:text-2xl leading-tight mb-2 flex items-center justify-between cursor-pointer hover:underline">
-						Pune's Best IT Training & Job-Oriented Institute <i
-							class="fas fa-arrow-up-right-from-square text-gray-900 ml-2 text-sm sm:text-base"></i>
-					</h3>
-					<p class="text-sm sm:text-base leading-relaxed text-gray-800 mb-3">
-						Gain hands-on experience, learn from industry experts, and secure
-						job placement in top IT companies. Enroll in ECTI Pune's best IT
-						Training & Job-Oriented Institute for Full Stack Development
-						courses with lifetime career support.</p>
-					<div class="flex flex-wrap gap-2">
-						<span
-							class="text-xs sm:text-sm text-gray-700 border border-gray-700 rounded-full px-3 py-1 cursor-pointer">Full
-							Stack Development</span> <span
-							class="text-xs sm:text-sm text-gray-700 border border-gray-700 rounded-full px-3 py-1 cursor-pointer">Job
-							Placement</span> <span
-							class="text-xs sm:text-sm text-gray-700 border border-gray-700 rounded-full px-3 py-1 cursor-pointer">Career
-							Support</span>
-					</div>
-				</div>
-
-				<!-- Right smaller posts -->
-				<div class="md:flex-1 mt-8 md:mt-0 flex flex-col space-y-6"
-					data-aos="fade-left">
-
-					<!-- Post 1 -->
-					<div class="flex flex-col sm:flex-row sm:space-x-4"
-						data-aos="fade-up" data-aos-duration="1200">
-						<div
-							class="w-1/2 sm:w-[200px] h-[120px] flex-shrink-0 rounded-sm overflow-hidden mb-3 sm:mb-0">
-							<img src="images/ABM.webp"
-								alt="Instructor teaching practical coding skills"
-								class="w-full h-full object-cover" width="200" height="120" />
-						</div>
-						<div class="flex flex-col">
-							<p class="text-[12px] leading-4 text-gray-700 mb-1">ECTI Team
-								• 15 May 2025</p>
-							<h4
-								class="font-semibold text-[14px] leading-5 mb-1 cursor-pointer hover:underline">
-								Learn Through Real Projects for Practical Experience</h4>
-							<p
-								class="text-[13px] leading-5 text-gray-800 mb-2 line-clamp-2 max-w-full sm:max-w-[300px]">
-								At ECTI, students work on live projects that simulate real
-								industry scenarios, building skills employers demand...</p>
-							<div class="flex flex-wrap gap-2">
-								<span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Live
-									Projects</span> <span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Hands-on</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Post 2 -->
-					<div class="flex flex-col sm:flex-row sm:space-x-4"
-						data-aos="fade-up" data-aos-duration="1200">
-						<div
-							class="w-1/2 sm:w-[200px] h-[120px] flex-shrink-0 rounded-sm overflow-hidden mb-3 sm:mb-0">
-							<img src="images/ABM.webp"
-								alt="Happy students celebrating job placement"
-								class="w-full h-full object-cover" width="200" height="120" />
-						</div>
-						<div class="flex flex-col">
-							<p class="text-[12px] leading-4 text-gray-700 mb-1">ECTI
-								Placement Team • 12 May 2025</p>
-							<h4
-								class="font-semibold text-[14px] leading-5 mb-1 cursor-pointer hover:underline">
-								Lifetime Placement Assistance & Career Support</h4>
-							<p
-								class="text-[13px] leading-5 text-gray-800 mb-2 line-clamp-2 max-w-full sm:max-w-[300px]">
-								ECTI provides continuous placement assistance even after course
-								completion, helping you get hired at top IT firms...</p>
-							<div class="flex flex-wrap gap-2">
-								<span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Job
-									Support</span> <span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Career
-									Growth</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Post 3 -->
-					<div class="flex flex-col sm:flex-row sm:space-x-4"
-						data-aos="fade-up" data-aos-duration="1200">
-						<div
-							class="w-1/2 sm:w-[200px] h-[120px] flex-shrink-0 rounded-sm overflow-hidden mb-3 sm:mb-0">
-							<img src="images/ABM.webp"
-								alt="Industry expert session at ECTI Institute Pune"
-								class="w-full h-full object-cover" width="200" height="120" />
-						</div>
-						<div class="flex flex-col">
-							<p class="text-[12px] leading-4 text-gray-700 mb-1">ECTI
-								Experts • 10 May 2025</p>
-							<h4
-								class="font-semibold text-[14px] leading-5 mb-1 cursor-pointer hover:underline">
-								Learn From Industry Experts & Experienced Trainers</h4>
-							<p
-								class="text-[13px] leading-5 text-gray-800 mb-2 line-clamp-2 max-w-full sm:max-w-[300px]">
-								Our trainers bring years of IT industry experience, guiding you
-								through cutting-edge technologies and best practices...</p>
-							<div class="flex flex-wrap gap-2">
-								<span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Expert
-									Trainers</span> <span
-									class="text-[11px] leading-4 text-gray-700 border border-gray-700 rounded-full px-2 py-0.5 cursor-pointer">Industry
-									Insights</span>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="flex justify-center md:justify-center mt-12 pt-10">
-						<a href="#"
-							class="relative inline-flex items-center gap-2 text-[#004466] text-lg font-semibold transition-all duration-300 group hover:text-[#007a99] hover:gap-3">
-							<span class="relative z-10">Read All Blogs</span> <i
-							class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
-							<span
-							class="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-[#004466] to-[#00bcd4] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
-							<span
-							class="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-[#00bcd4]/20 to-transparent opacity-0 group-hover:opacity-100 blur-md transition-all duration-500"></span>
-						</a>
-					</div>
-				</div>
+			<div class="text-center min-w-[120px]" data-aos="zoom-in"
+				data-aos-delay="300">
+				<h2
+					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
+					data-target="10000">0+</h2>
+				<p
+					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Students
+					Trust</p>
+			</div>
+			<div class="text-center min-w-[120px]" data-aos="zoom-in"
+				data-aos-delay="400">
+				<h2
+					class="text-4xl md:text-5xl font-extrabold text-blue-900 counter"
+					data-target="100">0%</h2>
+				<p
+					class="text-sm md:text-base text-blue-900 mt-2 font-medium tracking-wide">Satisfaction
+					Rate</p>
 			</div>
 		</section>
 
-		<!-- Footer -->
-		<footer class="w-full  py-10 px-4 sm:px-6 lg:px-8">
+
+
+
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="w-full py-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
+		<div
+			class="max-w-7xl mx-auto bg-gradient-to-r from-[#004060] to-[#00304d] text-white rounded-2xl">
 			<div
-				class="max-w-7xl mx-auto bg-gradient-to-r from-[#004060] to-[#00304d] text-white rounded-2xl">
-				<div
-					class="flex flex-col md:flex-row p-6 sm:p-10 md:p-12 gap-10 md:gap-0">
+				class="flex flex-col md:flex-row p-6 sm:p-10 md:p-12 gap-10 md:gap-0">
 
-					<!-- Section 1: Logo + Navigation Links -->
-					<div class="flex-1 flex-col" data-aos="fade-right"
-						data-aos-duration="1000">
-						<!-- Logo -->
-						<div class="flex justify-start pt-3 pb-6">
-							<img src="images/WhiteLogo.svg" alt="Envision logo"
-								class="w-[140px] sm:w-[150px] h-auto" />
-						</div>
-
-
-						<!-- Quick Links Grid -->
-						<div
-							class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-1 gap-x-2 text-xs sm:text-sm md:text-base pb-6">
-
-							<!-- Column 1 -->
-							<div class="space-y-3">
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">Home</p>
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] break-words transition duration-200 ease-in-out">info@ecti.co.in</p>
-							</div>
-
-							<!-- Column 2 -->
-							<div class="space-y-3">
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">Courses</p>
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">About
-									ECTI</p>
-							</div>
-
-							<!-- Column 3 -->
-							<div class="space-y-3">
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">Placement
-									Records</p>
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">Privacy
-									Policy</p>
-							</div>
-
-							<!-- Column 4 -->
-							<div class="space-y-3">
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] transition duration-200 ease-in-out">Branches</p>
-								<p
-									class="cursor-pointer hover:underline hover:text-[#a8d8f8] break-words transition duration-200 ease-in-out">+91
-									7498713536</p>
-							</div>
-						</div>
-
-
+				<!-- Left: Logo + Links -->
+				<div class="flex-1 flex-col" data-aos="fade-right"
+					data-aos-duration="1000">
+					<div class="flex justify-start pt-3 pb-6">
+						<img src="${pageContext.request.contextPath}/images/WhiteLogo.svg"
+							alt="Envision logo" class="w-[140px] sm:w-[150px] h-auto" />
 					</div>
-
-					<!-- Section 2: WhatsApp CTA -->
 					<div
-						class="flex flex-col items-start md:items-end md:pr-10 justify-center text-center md:text-right space-y-2 "
-						data-aos="fade-left" data-aos-duration="1000">
-						<p class="text-base sm:text-lg md:text-xl font-normal">Chat
-							directly on</p>
-						<p class="text-2xl sm:text-3xl md:text-4xl font-semibold">WhatsApp</p>
-						<p class="text-xs sm:text-sm md:text-base max-w-xs">Connect
-							with our experts to enroll now</p>
-
-						<button aria-label="Chat Now on WhatsApp"
-							class="bg-[#34af4a] hover:bg-[#2e9e43] transition-colors text-white rounded-lg px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 text-xs sm:text-sm md:text-base mt-2">
-							<i class="fab fa-whatsapp text-sm sm:text-base md:text-lg"></i>
-							Chat Now!
-						</button>
+						class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-1 gap-x-2 text-xs sm:text-sm md:text-base pb-6">
+						<div class="space-y-3">
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">Home</p>
+							<p
+								class="cursor-pointer hover:underline hover:text-[#a8d8f8] break-words">info@ecti.co.in</p>
+						</div>
+						<div class="space-y-3">
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">Courses</p>
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">About
+								ECTI</p>
+						</div>
+						<div class="space-y-3">
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">Placement
+								Records</p>
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">Privacy
+								Policy</p>
+						</div>
+						<div class="space-y-3">
+							<p class="cursor-pointer hover:underline hover:text-[#a8d8f8]">Branches</p>
+							<p
+								class="cursor-pointer hover:underline hover:text-[#a8d8f8] break-words">+91
+								7498713536</p>
+						</div>
 					</div>
 				</div>
 
-				<!-- Copyright -->
+				<!-- Right: WhatsApp CTA -->
 				<div
-					class="text-center text-xs sm:text-sm md:text-base mt-6 pb-5 sm:mt-8">
-					© 2024, ECTI Pune | All Rights Reserved.</div>
+					class="flex flex-col items-start md:items-end md:pr-10 justify-center text-center md:text-right space-y-2"
+					data-aos="fade-left" data-aos-duration="1000">
+					<p class="text-base sm:text-lg md:text-xl font-normal">Chat
+						directly on</p>
+					<p class="text-2xl sm:text-3xl md:text-4xl font-semibold">WhatsApp</p>
+					<p class="text-xs sm:text-sm md:text-base max-w-xs">Connect
+						with our experts to enroll now</p>
+					<button aria-label="Chat Now on WhatsApp"
+						class="bg-[#34af4a] hover:bg-[#2e9e43] transition-colors text-white rounded-lg px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 text-xs sm:text-sm md:text-base mt-2">
+						<i class="fab fa-whatsapp text-sm sm:text-base md:text-lg"></i>
+						Chat Now!
+					</button>
+				</div>
 			</div>
-		</footer>
 
+			<!-- Copyright -->
+			<div
+				class="text-center text-xs sm:text-sm md:text-base mt-6 pb-5 sm:mt-8">
+				© 2024, ECTI Pune | All Rights Reserved.</div>
+		</div>
 		<!-- Back to Top Button -->
 		<div id="backToTop" onclick="scrollToTop()"
 			class="hidden fixed bottom-6 right-6 z-50 cursor-pointer 
@@ -2164,54 +1537,105 @@
     </svg>
 		</div>
 
+	</footer>
 
-	</main>
-	<script>
 
-	const backToTopBtn = document.getElementById("backToTop");
+	<script type="text/javascript">
 
-	  // Show/hide on scroll
-	  window.addEventListener("scroll", () => {
-	    if (window.scrollY > 100) {
-	      backToTopBtn.classList.remove("hidden");
-	    } else {
-	      backToTopBtn.classList.add("hidden");
-	    }
-	  });
+	// scroll topp btn 
+const backToTopBtn = document.getElementById("backToTop");
 
-	  // Scroll to top
-	  function scrollToTop() {
-	    window.scrollTo({ top: 0, behavior: "smooth" });
-	  }
-	  const overlay = document.getElementById("overlay");
-	  const closeBtn = document.getElementById("closeBtn");
+// Show/hide on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    backToTopBtn.classList.remove("hidden");
+  } else {
+    backToTopBtn.classList.add("hidden");
+  }
+});
 
-	  closeBtn.addEventListener("click", () => {
-	    if (
-	      confirm(
-	        "Please note: This consultation is free, and we encourage you to use this opportunity for guidance."
-	      )
-	    ) {
-	      overlay.style.display = "none"; // Hide the whole overlay including card
-	    }
-	  });
+// Scroll to top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+    AOS.init();
+    
+    
+    new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        grabCursor: true,
+        mousewheel: true,
+        breakpoints: {
+          640: { slidesPerView: 3 },
+          768: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
+        },
+      });
 
-	  function validateForm() {
-	    const name = document.getElementById("name").value.trim();
-	    const email = document.getElementById("email").value.trim();
-	    const contact = document.getElementById("contact").value.trim();
+      new Swiper(".mySwiperReverse", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          reverseDirection: true,
+          disableOnInteraction: false,
+        },
+        
+        grabCursor: true,
+        mousewheel: true,
+        breakpoints: {
+          640: { slidesPerView: 3 },
+          768: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
+        },
+      });
 
-	    if (name && email && contact) {
-	      return true;
-	    } else {
-	      alert("Please fill all the fields.");
-	      return false;
-	    }
-	  }
-	  
-	  
-	  
-	// Animate counters on scroll into view
+      
+
+	     // Review Slider
+	     const swiperFead = new Swiper(".swipersFeadBack", {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         loop: true,
+         navigation: {
+             nextEl: "#slider-button-rightFead",
+             prevEl: "#slider-button-leftFead",
+         },
+         autoplay: {
+             delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3s)
+             disableOnInteraction: false, // Keeps autoplay running even after user interacts
+         },
+         pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+         },
+         breakpoints: {
+             640: {
+                 slidesPerView: 1,
+                 spaceBetween: 24,
+             },
+             768: {
+                 slidesPerView: 2,
+                 spaceBetween: 28,
+             },
+             1024: {
+                 slidesPerView: 2,
+                 spaceBetween: 32,
+             },
+         },
+     });
+
+		    AOS.init({ duration: 1000 });
+		    
+		    
+		 //   counter 
 		    const counters = document.querySelectorAll(".counter");
 
 		    function animateCounter(el) {
@@ -2254,117 +1678,85 @@
 		    window.addEventListener("load", checkCounters);
 	 	    
 
+		    
+		    const placedCounters = document.querySelectorAll(".placed-count");
 
-	    AOS.init({ duration: 1000 });
-	    
-	
-	    
-	    
-	    
-	    new Swiper(".mySwiper", {
-	        slidesPerView: 2,
-	        spaceBetween: 20,
-	        loop: true,
-	        autoplay: {
-	          delay: 3000,
-	          disableOnInteraction: false,
-	        },
-	        grabCursor: true,
-	        mousewheel: true,
-	        breakpoints: {
-	          640: { slidesPerView: 3 },
-	          768: { slidesPerView: 4 },
-	          1024: { slidesPerView: 5 },
-	        },
-	      });
+		    function runPlacementCounter(counterEl) {
+		      const finalValue = +counterEl.getAttribute("data-placed");
+		      let startValue = 0;
+		      const animationTime = 2000; // total duration
+		      const step = finalValue > 1000 ? Math.ceil(finalValue / 100) : 1;
 
-	      new Swiper(".mySwiperReverse", {
-	        slidesPerView: 2,
-	        spaceBetween: 20,
-	        loop: true,
-	        autoplay: {
-	          delay: 3000,
-	          reverseDirection: true,
-	          disableOnInteraction: false,
-	        },
-	        
-	        grabCursor: true,
-	        mousewheel: true,
-	        breakpoints: {
-	          640: { slidesPerView: 3 },
-	          768: { slidesPerView: 4 },
-	          1024: { slidesPerView: 5 },
-	        },
-	      });
+		      function incrementValue() {
+		        startValue += step;
+		        if (startValue > finalValue) startValue = finalValue;
+		        counterEl.textContent = startValue + "+";
 
-	      
-	     /// Student Testimonial
+		        if (startValue < finalValue) {
+		          requestAnimationFrame(incrementValue);
+		        }
+		      }
 
-const swiperdemo = new Swiper(".swiperText", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: "#slider-button-right",
-                prevEl: "#slider-button-left",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3s)
-                disableOnInteraction: false, // Keeps autoplay running even after user interacts
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 24,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 28,
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 32,
-                },
-            },
-        });
-	
-	     // Review Slider
-	     const swiperFead = new Swiper(".swipersFeadBack", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: "#slider-button-rightFead",
-                prevEl: "#slider-button-leftFead",
-            },
-            autoplay: {
-                delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3s)
-                disableOnInteraction: false, // Keeps autoplay running even after user interacts
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 24,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 28,
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 32,
-                },
-            },
-        });
-	  </script>
+		      incrementValue();
+		    }
 
+		    function elementVisibleInView(element) {
+		      const dimensions = element.getBoundingClientRect();
+		      return (
+		        dimensions.top <= window.innerHeight &&
+		        dimensions.bottom >= 0
+		      );
+		    }
+
+		    function initializePlacementCounters() {
+		      placedCounters.forEach((counterItem) => {
+		        if (!counterItem.classList.contains("already-counted") && elementVisibleInView(counterItem)) {
+		          runPlacementCounter(counterItem);
+		          counterItem.classList.add("already-counted");
+		        }
+		      });
+		    }
+
+		    window.addEventListener("scroll", initializePlacementCounters);
+		    window.addEventListener("load", initializePlacementCounters);
+		    
+		    
+		    
+		    /// Student Testimonial
+
+		    const swiperdemo = new Swiper(".swiperText", {
+		                slidesPerView: 1,
+		                spaceBetween: 20,
+		                loop: true,
+		                navigation: {
+		                    nextEl: "#slider-button-right",
+		                    prevEl: "#slider-button-left",
+		                },
+		                pagination: {
+		                    el: ".swiper-pagination",
+		                    clickable: true,
+		                },
+		                autoplay: {
+		                    delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3s)
+		                    disableOnInteraction: false, // Keeps autoplay running even after user interacts
+		                },
+		                breakpoints: {
+		                    640: {
+		                        slidesPerView: 1,
+		                        spaceBetween: 24,
+		                    },
+		                    768: {
+		                        slidesPerView: 2,
+		                        spaceBetween: 28,
+		                    },
+		                    1024: {
+		                        slidesPerView: 2,
+		                        spaceBetween: 32,
+		                    },
+		                },
+		            });
+		    	
+  </script>
 </body>
+
 </html>

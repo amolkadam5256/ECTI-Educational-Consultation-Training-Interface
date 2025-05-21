@@ -32,18 +32,22 @@
 						href="<%=request.getContextPath() + "/pages/courses.jsp"%>"
 						class="nav-link <%=request.getRequestURI().endsWith("courses.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
 						Courses </a> <a
-						href="<%=request.getContextPath() + "/pages/placementRecords.jsp"%>"
-						class="nav-link <%=request.getRequestURI().endsWith("placementRecords.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
+						href="<%=request.getContextPath() + "/pages/PlacementRecords.jsp"%>"
+						class="nav-link <%=request.getRequestURI().endsWith("PlacementRecords.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
 						Placement </a> <a
-						href="<%=request.getContextPath() + "/pages/aboutECTI.jsp"%>"
-						class="nav-link <%=request.getRequestURI().endsWith("aboutECTI.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
+						href="<%=request.getContextPath() + "/pages/About.jsp"%>"
+						class="nav-link <%=request.getRequestURI().endsWith("About.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
 						About </a> <a
 						href="<%=request.getContextPath() + "/pages/branches.jsp"%>"
 						class="nav-link <%=request.getRequestURI().endsWith("branches.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
 						Branches </a> <a
 						href="<%=request.getContextPath() + "/pages/blog.jsp"%>"
 						class="nav-link <%=request.getRequestURI().endsWith("blog.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
-						Blog </a> <a href="<%=request.getContextPath() + "/pages/login.jsp"%>"
+						Blog </a> <a
+						href="<%=request.getContextPath() + "/pages/contact.jsp"%>"
+						class="nav-link <%=request.getRequestURI().endsWith("contact.jsp") ? "active text-blue-600" : "text-gray-700"%> hover:text-blue-600">
+						Contact </a> <a
+						href="<%=request.getContextPath() + "/pages/login.jsp"%>"
 						class="nav-link <%=request.getRequestURI().endsWith("login.jsp")
 		? "active text-white bg-blue-600"
 		: "text-blue-600 border border-blue-600"%> px-3 py-1 rounded hover:bg-blue-600 hover:text-white transition">
@@ -84,9 +88,12 @@
 				Branches </a> <a
 				href="<%=request.getContextPath() + "/pages/blog.jsp"%>"
 				class="block nav-link <%=request.getRequestURI().endsWith("blog.jsp") ? "active text-blue-600" : "text-gray-700"%>">
-				Blog </a> <a href="<%=request.getContextPath() + "/pages/login.jsp"%>"
+				Blog </a> <a href="<%=request.getContextPath() + "/pages/contact.jsp"%>"
+				class="block nav-link <%=request.getRequestURI().endsWith("contact.jsp") ? "active text-blue-600" : "text-gray-700"%>">
+				Contact </a> <a
+				href="<%=request.getContextPath() + "/pages/login.jsp"%>"
 				class="block nav-link <%=request.getRequestURI().endsWith("login.jsp")
-		? "active text-white bg-blue-600"
+		? "active text-white bg-blue-600 "
 		: "text-blue-600 border border-blue-600"%> px-3 py-1 rounded text-center">
 				Login </a> <a href="<%=request.getContextPath() + "/pages/signup.jsp"%>"
 				class="block nav-link <%=request.getRequestURI().endsWith("signup.jsp") ? "active bg-blue-700 text-white" : "bg-blue-600 text-white"%> px-3 py-1 rounded text-center">

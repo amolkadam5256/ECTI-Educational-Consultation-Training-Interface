@@ -102,36 +102,67 @@
 						<h1
 							class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
 							Log in to your account</h1>
-						<form class="space-y-4 md:space-y-6" action="#">
+						<form class="space-y-4 md:space-y-6"
+							action="${pageContext.request.contextPath}/LoginServlet"
+							method="post">
+
+							<!-- Email -->
 							<div>
 								<label for="email"
-									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email ID</label> <input type="email" name="email" id="email"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
-									placeholder="name@company.com" required>
+									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+									Email ID </label> <input type="email" name="email" id="email"
+									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg
+                   focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5
+                   dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+                   dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
+									placeholder="name@company.com" required />
 							</div>
+
+							<!-- Password with toggle -->
 							<div class="relative">
 								<label for="password"
-									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-								<input type="password" name="password" id="password"
-									placeholder="••••••••"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 pr-12 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
+									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+									Password </label> <input type="password" name="user_password"
+									id="password" placeholder="••••••••"
+									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg
+                   focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 pr-12
+                   dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+                   dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
 									required />
 								<button type="button" id="togglePassword"
-									class="absolute inset-y-0 right-0 flex items-center  pt-6 pr-5  text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
+									class="absolute inset-y-0 right-0 flex items-center pt-6 pr-5
+                   text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
 									aria-label="Toggle password visibility">👁️</button>
 							</div>
 
-
-							<!-- Button with requested colors and hover effect -->
+							<!-- Submit Button -->
 							<button type="submit"
-								class="w-auto h-12 border-2 border-transparent hover:border-indigo-600 rounded-lg px-6 flex items-center justify-center bg-indigo-600 hover:bg-white transition-colors duration-300 text-white hover:text-indigo-600">
+								class="w-auto h-12 border-2 border-transparent hover:border-indigo-600
+               rounded-lg px-6 flex items-center justify-center bg-indigo-600
+               hover:bg-white transition-colors duration-300 text-white hover:text-indigo-600">
 								Login</button>
 
-							<p class="text-sm font-light text-gray-500 dark:text-gray-400">
-								Don’t have an account yet? <a href="${pageContext.request.contextPath}/pages/signup.jsp"
-									class="font-medium text-indigo-600 hover:underline dark:text-indigo-500">Sign
-									up</a>
+							<!-- Error Message -->
+							<c:if test="${param.error == '1'}">
+								<p class="text-red-600 text-sm mt-2">Invalid email or
+									password.</p>
+							</c:if>
+
+							<!-- Success Message -->
+							<c:if test="${param.success == '1'}">
+								<p class="text-green-600 text-sm mt-2">Account created
+									successfully! Please login.</p>
+							</c:if>
+
+							<!-- Signup Link -->
+							<p
+								class="text-sm font-light text-gray-500 dark:text-gray-400 mt-3">
+								Don’t have an account yet? <a
+									href="${pageContext.request.contextPath}/pages/signup.jsp"
+									class="font-medium text-indigo-600 hover:underline dark:text-indigo-500">
+									Sign up </a>
 							</p>
+
 						</form>
 					</div>
 				</div>
@@ -228,36 +259,40 @@
 
 
 	<script type="text/javascript">
+    // Back to top button functionality
+    const backToTopBtn = document.getElementById("backToTop");
 
-	// scroll topp btn 
-const backToTopBtn = document.getElementById("backToTop");
-
-// Show/hide on scroll
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    backToTopBtn.classList.remove("hidden");
-  } else {
-    backToTopBtn.classList.add("hidden");
-  }
-});
-
-// Scroll to top
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    const passwordInput = document.getElementById('password');
-    const toggleBtn = document.getElementById('togglePassword');
-
-    toggleBtn.addEventListener('click', () => {
-      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-      passwordInput.setAttribute('type', type);
-      toggleBtn.textContent = type === 'password' ? '👁️' : '🙈';
+    // Show/hide on scroll
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            backToTopBtn.classList.remove("hidden");
+        } else {
+            backToTopBtn.classList.add("hidden");
+        }
     });
-  });
-	   		    AOS.init({ duration: 1000 });
-		  </script>
+
+    // Scroll to top
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Password visibility toggle
+    document.addEventListener('DOMContentLoaded', function () {
+        const passwordInput = document.getElementById('password');
+        const toggleBtn = document.getElementById('togglePassword');
+
+        if (toggleBtn && passwordInput) {
+            toggleBtn.addEventListener('click', () => {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                toggleBtn.textContent = type === 'password' ? '👁️' : '🙈';
+            });
+        }
+    });
+
+    // Initialize AOS animations
+    AOS.init({ duration: 1000 });
+</script>
 </body>
 
 </html>

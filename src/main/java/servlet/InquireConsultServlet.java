@@ -1,14 +1,15 @@
-package service;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import dao.ConsultationRequestDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import dao.ConsultationRequestDAO;
 import model.Consultation;
 
 @WebServlet("/inquireConsult")

@@ -102,64 +102,69 @@
 						<h1
 							class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
 							Sign up for a new account</h1>
-						<form class="space-y-4 md:space-y-6" action="#">
+						<form class="space-y-4 md:space-y-6"
+							action="<%=request.getContextPath()%>/SignupServlet"
+							method="POST">
 
 							<!-- Full Name -->
 							<div>
-								<label for="fullname"
+								<label for="full_name"
 									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full
-									Name</label> <input type="text" name="fullname" id="fullname"
-									placeholder="Your full name"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
-									required />
+									Name</label> <input type="text" name="full_name" id="full_name"
+									placeholder="Your full name" required
+									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 
+             dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600" />
+							</div>
+
+							<!-- Email -->
+							<div>
+								<label for="email"
+									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+								<input type="email" name="email" id="email"
+									placeholder="name@company.com" required
+									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 
+             dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600" />
 							</div>
 
 							<!-- Contact Number -->
 							<div>
-								<label for="contact"
+								<label for="contact_number"
 									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact
-									Number</label> <input type="tel" name="contact" id="contact"
-									placeholder="Enter your contact number"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
-									required />
+									Number</label> <input type="text" name="contact_number"
+									id="contact_number" placeholder="Enter your contact number"
+									required
+									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 
+             dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600" />
 							</div>
 
-							<!-- Email ID -->
-							<div>
-								<label for="email"
-									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
-									ID</label> <input type="email" name="email" id="email"
-									placeholder="name@company.com"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
-									required />
-							</div>
-
-							<!-- Password -->
+							<!-- Password Field with Toggle -->
 							<div class="relative">
-								<label for="password"
-									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-								<input type="password" name="password" id="password"
-									placeholder="••••••••"
-									class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 block w-full p-2.5 pr-12 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600"
-									required />
-								<button type="button" id="togglePassword"
-									class="absolute inset-y-0 right-0 flex items-center pt-6 pr-5 text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
-									aria-label="Toggle password visibility">👁️</button>
+								<label for="user_password"
+									class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+									Password </label> <input type="password" id="user_password"
+									name="user_password"
+									class="transition-all duration-300 ease-in-out bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+									placeholder="••••••••" required /> <span
+									onclick="togglePasswordVisibility()"
+									class="absolute right-3 top-9 text-xl text-gray-500 hover:text-indigo-600 cursor-pointer transition-transform duration-300 ease-in-out"
+									id="toggle_user_password"> 👁️ </span>
 							</div>
-
-							<!-- Confirm Password -->
-							
 
 							<!-- Submit Button -->
 							<button type="submit"
 								class="w-auto h-12 border-2 border-transparent hover:border-indigo-600 rounded-lg px-6 flex items-center justify-center bg-indigo-600 hover:bg-white transition-colors duration-300 text-white hover:text-indigo-600">
 								Sign Up</button>
 
+							<!-- Login Link -->
 							<p class="text-sm font-light text-gray-500 dark:text-gray-400">
-								Already have an account? <a href="<%=request.getContextPath() + "/pages/login.jsp"%>"
+								Already have an account? <a
+									href="<%=request.getContextPath() + "/pages/login.jsp"%>"
 									class="font-medium text-indigo-600 hover:underline dark:text-indigo-500">Login</a>
 							</p>
 						</form>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -274,17 +279,74 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const passwordInput = document.getElementById('password');
-    const toggleBtn = document.getElementById('togglePassword');
 
-    toggleBtn.addEventListener('click', () => {
-      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-      passwordInput.setAttribute('type', type);
-      toggleBtn.textContent = type === 'password' ? '👁️' : '🙈';
-    });
-  });
 	   		    AOS.init({ duration: 1000 });
+	   		    
+	   		 document.getElementById("sendCode").addEventListener("click", function () {
+	   		  const emailInput = document.getElementById("email");
+	   		  const codeStatus = document.getElementById("codeStatus");
+
+	   		  // Clear previous status classes
+	   		  codeStatus.classList.remove("text-green-600", "dark:text-green-400", "text-red-600", "dark:text-red-400", "text-yellow-600");
+
+	   		  if (!emailInput.value.trim()) {
+	   		    codeStatus.textContent = "Please enter your email address.";
+	   		    codeStatus.classList.add("text-red-600", "dark:text-red-400");
+	   		    return;
+	   		  }
+
+	   		  // Disable button to prevent multiple clicks
+	   		  this.disabled = true;
+	   		  codeStatus.textContent = "Sending verification code...";
+	   		  codeStatus.classList.add("text-yellow-600");
+
+	   		  fetch("SendCodeServlet", {
+	   		    method: "POST",
+	   		    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+	   		    body: "email=" + encodeURIComponent(emailInput.value.trim()),
+	   		  })
+	   		  .then(res => res.text())
+	   		  .then(data => {
+	   		    if (data === "success") {
+	   		      codeStatus.textContent = "Verification code sent!";
+	   		      codeStatus.classList.remove("text-yellow-600");
+	   		      codeStatus.classList.add("text-green-600", "dark:text-green-400");
+	   		    } else {
+	   		      codeStatus.textContent = "Failed to send code.";
+	   		      codeStatus.classList.remove("text-yellow-600");
+	   		      codeStatus.classList.add("text-red-600", "dark:text-red-400");
+	   		    }
+	   		    this.disabled = false;
+	   		  })
+	   		  .catch(() => {
+	   		    codeStatus.textContent = "Error sending code.";
+	   		    codeStatus.classList.remove("text-yellow-600");
+	   		    codeStatus.classList.add("text-red-600", "dark:text-red-400");
+	   		    this.disabled = false;
+	   		  });
+	   		});
+
+	   	  function togglePasswordVisibility() {
+	   	    const passwordInput = document.getElementById("user_password");
+	   	    const toggleIcon = document.getElementById("toggle_user_password");
+
+	   	    // Toggle password field type
+	   	    const isPassword = passwordInput.type === "password";
+	   	    passwordInput.type = isPassword ? "text" : "password";
+
+	   	    // Toggle icon emoji
+	   	    toggleIcon.textContent = isPassword ? "🙈" : "👁️";
+
+	   	    // Animate icon (scale)
+	   	    toggleIcon.classList.add("scale-125");
+	   	    setTimeout(() => toggleIcon.classList.remove("scale-125"), 150);
+
+	   	    // Animate input field (pulse)
+	   	    passwordInput.classList.add("ring", "ring-indigo-300", "animate-pulse");
+	   	    setTimeout(() => {
+	   	      passwordInput.classList.remove("animate-pulse", "ring", "ring-indigo-300");
+	   	    }, 300);
+	   	  }
 		  </script>
 </body>
 

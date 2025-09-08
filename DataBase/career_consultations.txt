@@ -1,0 +1,49 @@
+mysql> SHOW DATABASES;
++-------------------------------+
+| Database                      |
++-------------------------------+
+| crudapp                       |
+| dbconnection                  |
+| employeedb                    |
+| information_schema            |
+| invision_institute_management |
+| loginapp                      |
+| mysql                         |
+| performance_schema            |
+| student_management_db         |
+| studentmanagementsystem       |
++-------------------------------+
+10 rows in set (0.00 sec)
+
+mysql> USE invision_institute_management;
+Database changed
+mysql> SHOW TABLES;
++-----------------------------------------+
+| Tables_in_invision_institute_management |
++-----------------------------------------+
+| career_consultations                    |
++-----------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> desc table career_consultations;
++----+-------------+----------------------+------------+------+---------------+------+---------+------+------+----------+-------+
+| id | select_type | table                | partitions | type | possible_keys | key  | key_len | ref  | rows | filtered | Extra |
++----+-------------+----------------------+------------+------+---------------+------+---------+------+------+----------+-------+
+|  1 | SIMPLE      | career_consultations | NULL       | ALL  | NULL          | NULL | NULL    | NULL |    1 |   100.00 | NULL  |
++----+-------------+----------------------+------------+------+---------------+------+---------+------+------+----------+-------+
+1 row in set, 1 warning (0.01 sec)
+
+mysql> SELECT * FROM career_consultations;
++----+--------------------+-------------------------+--------------+----------------+---------------------+
+| id | full_name          | email                   | country_code | contact_number | submission_time     |
++----+--------------------+-------------------------+--------------+----------------+---------------------+
+|  1 | Amol Tukaram Kadam | amolkadam1274@gmail.com | +91          | 7709266280     | 2025-05-12 12:27:05 |
+|  2 | Amol Tukaram Kadam | amolkadam14@gmail.com   | +91          | 7709266280     | 2025-05-17 15:08:37 |
+|  3 | Amol Tukaram Kadam | amolkadam11@gmail.com   | +91          | 7709266280     | 2025-05-17 15:11:15 |
+|  4 | Amol Tukaram Kadam | amolkada124@gmail.com   | +91          | 7709266280     | 2025-05-21 16:59:21 |
+|  5 | Amol Tukaram Kadam | amoadam1274@gmail.com   | +91          | 7709266280     | 2025-05-25 11:50:58 |
+|  6 | Amol Tukaram Kadam | adam1274@gmail.com      | +91          | 7709266280     | 2025-05-25 11:51:06 |
++----+--------------------+-------------------------+--------------+----------------+---------------------+
+6 rows in set (0.01 sec)
+
+mysql>

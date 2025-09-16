@@ -95,4 +95,29 @@ public class UserDAO {
         }
         return false;
     }
+    
+    
+    
+    
+
+    // ✅ NEW: total users
+    public int getTotalUsers() {
+        int totalUsers = 0;
+        String sql = "SELECT COUNT(*) AS count FROM users";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                totalUsers = rs.getInt("count");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return totalUsers;
+    }
+
+    
+    
+    
+    
 }

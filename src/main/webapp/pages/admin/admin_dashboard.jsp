@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ page session="true"%>
-<%@ page import="model.User"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page session="true" %>
+<%@ page import="model.User" %>
 
 <%
 // get user from session
@@ -495,7 +494,7 @@ body {
 				<div class="flex justify-between items-center">
 					<div>
 						<p class="text-gray-500">Total Users</p>
-						<h3 class="text-2xl font-bold text-gray-800">2,548</h3>
+						<h3 class="text-2xl font-bold text-gray-800">${totalUsers}</h3>
 					</div>
 					<div
 						class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">

@@ -142,18 +142,11 @@
                hover:bg-white transition-colors duration-300 text-white hover:text-indigo-600">
 								Login</button>
 
-							<!-- Error Message -->
-							<c:if test="${param.error == '1'}">
-								<p class="text-red-600 text-sm mt-2">Invalid email or
-									password.</p>
-							</c:if>
-
-							<!-- Success Message -->
-							<c:if test="${param.success == '1'}">
-								<p class="text-green-600 text-sm mt-2">Account created
-									successfully! Please login.</p>
-							</c:if>
-
+							<p id="errorMsg" class="text-red-600 text-sm mt-2"
+								style="display: none;">Invalid email or password.</p>
+							<p id="successMsg" class="text-green-600 text-sm mt-2"
+								style="display: none;">Account created successfully! Please
+								login.</p>
 							<!-- Signup Link -->
 							<p
 								class="text-sm font-light text-gray-500 dark:text-gray-400 mt-3">
@@ -292,6 +285,18 @@
 
     // Initialize AOS animations
     AOS.init({ duration: 1000 });
+    
+ // Read URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    const success = params.get('success');
+
+    // Show the appropriate message
+    if (error === '1') {
+      document.getElementById('errorMsg').style.display = 'block';
+    } else if (success === '1') {
+      document.getElementById('successMsg').style.display = 'block';
+    }
 </script>
 </body>
 

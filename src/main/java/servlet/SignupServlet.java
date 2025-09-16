@@ -62,8 +62,10 @@ public class SignupServlet extends HttpServlet {
         // Redirect appropriately
         if (isRegistered) {
             if (session != null && session.getAttribute("currentUser") != null) {
-                // Admin created a user
-                response.sendRedirect(request.getContextPath() + "/pages/admin/users.jsp?created=1");
+                // Admin created a user – forward internally to the JSP in WEB-INF
+                request.setAttribute("created", 1); // optional to pass data
+                request.getRequestDispatcher("/WEB-INF/pages/admin/users.jsp")
+                       .forward(request, response);
             } else {
                 // Public signup
                 response.sendRedirect(request.getContextPath() + "/pages/login.jsp?success=1");
@@ -71,5 +73,6 @@ public class SignupServlet extends HttpServlet {
         } else {
             response.sendRedirect(request.getContextPath() + "/pages/signup.jsp?error=1");
         }
+
     }
 }

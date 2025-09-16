@@ -1,0 +1,57 @@
+Show databases;
+DROP DATABASE invision_institute_management;
+CREATE DATABASE invision_institute_management;
+use invision_institute_management;
+
+CREATE TABLE career_consultations (
+    id INT NOT NULL AUTO_INCREMENT,                -- Primary key, auto-increment
+    full_name VARCHAR(100) NOT NULL,              -- User full name, required
+    email VARCHAR(100) NOT NULL UNIQUE,           -- Email, required and unique
+    country_code VARCHAR(10) DEFAULT '+91',       -- Country code, optional, default '+91'
+    contact_number VARCHAR(15) NOT NULL,          -- Contact number, required
+    submission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp of submission
+    user_id INT,                                  -- Optional, no foreign key
+    PRIMARY KEY (id),
+    INDEX idx_user_id (user_id)
+);
+
+desc career_consultations;
+show tables;
+select * from  career_consultations;
+
+
+DROP TABLE IF EXISTS users;
+
+-- Create users table
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    country_code VARCHAR(10) DEFAULT '+91',
+    contact_number VARCHAR(15) NOT NULL,
+    password VARCHAR(255) NOT NULL,                     -- store normal password here
+    role ENUM('student','teacher','manager','admin') 
+         DEFAULT 'student' NOT NULL,                    -- default = student for public signup
+    created_by INT NULL,                                -- user id who created this account (audit)
+    account_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Insert Admin
+INSERT INTO users (full_name, email, contact_number, password, role)
+VALUES ('Amol Kadam', 'amolkadam1274@gmail.com', '7709266280', 'Admin@123', 'admin');
+
+-- Insert Teacher
+INSERT INTO users (full_name, email, contact_number, password, role)
+VALUES ('Teacher Name', 'teacher@example.com', '7709000000', 'Teacher@123', 'teacher');
+
+-- Insert Manager
+INSERT INTO users (full_name, email, contact_number, password, role)
+VALUES ('Manager Name', 'manager@example.com', '7709111111', 'Manager@123', 'manager');
+
+-- View data
+SELECT * FROM users;	
+
+-- View table structure
+DESC users;
